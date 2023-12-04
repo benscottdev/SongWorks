@@ -1,5 +1,5 @@
 import Header from "../Components/Header";
-
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 function Home() {
@@ -12,6 +12,7 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write a radio campaign encouraging drivers to take a 15 minute break when travelling long distances. We went back to the 70s and created a super-refreshing one minute soft drink style jingle.",
+      link: "/refreshyourdrive",
     },
     {
       title: "Stars of Summer",
@@ -21,6 +22,7 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write and produce a suite of fun jingles for radio across different genres for the iconic bakery’s Stars of Summer campaign. This was for their iconic frog cake and won 4 AADC Awards.",
+      link: "/",
     },
     {
       title: "Foodland",
@@ -30,6 +32,7 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write and produce a track for a television commercial that captures what this beloved independent franchise means to the people of South Australia.",
+      link: "/",
     },
     {
       title: "COTA",
@@ -39,6 +42,7 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write and produce a song for a television commercial targeting over 60s. With a ridiculous idea from Showpony’s Creative Director we made this stupidly fun and catchy track for TV.",
+      link: "/",
     },
     {
       title: "Beaumont Tiles",
@@ -48,12 +52,14 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write and produce a signature jingle for ongoing radio and TV commercials.",
+      link: "/",
     },
     {
       title: "Laura Voicemail",
       client: "Private",
       img: "imgSrc",
       brief: "Write and produce a fun, personalised voicemail message.",
+      link: "/",
     },
     {
       title: "Quit Your Way in May",
@@ -63,6 +69,7 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write and produce a jingle for a radio and television campaign encouraging smokers to find their own way to give up cigarettes for the month of May.",
+      link: "/",
     },
     {
       title: "Fantastic Noodles",
@@ -71,6 +78,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: "imgSrc",
       brief: "",
+      link: "/",
     },
 
     {
@@ -80,6 +88,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: "imgSrc",
       brief: "",
+      link: "/",
     },
 
     {
@@ -89,6 +98,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: "imgSrc",
       brief: "",
+      link: "/",
     },
 
     {
@@ -98,6 +108,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: "imgSrc",
       brief: "",
+      link: "/",
     },
     {
       title: "Words Grow Minds",
@@ -106,6 +117,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: "imgSrc",
       brief: "",
+      link: "/",
     },
   ];
 
@@ -113,22 +125,25 @@ function Home() {
     <div className="homePage">
       <Header />
       {jobsToDisplayArray.map((item, index) => (
-        <motion.div
-          className="jobsToDisplay"
-          key={index}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            ease: "easeIn",
-            delay: 0.2 * index + 2.5,
-            duration: 1,
-          }}
-        >
-          <h1>{item.title}</h1>
-          <p>Client: {item.client}</p>
-          <p>Agency: {item.agency}</p>
-          <p>Credits: {item.credits}</p>
-        </motion.div>
+        <Link to={item.link} style={{ textDecoration: "none" }}>
+          <motion.div
+            array={jobsToDisplayArray}
+            className="jobsToDisplay"
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              ease: "easeIn",
+              delay: 0.2 * index + 1,
+              duration: 1,
+            }}
+          >
+            <h1>{item.title}</h1>
+            <p>Client: {item.client}</p>
+            <p>Agency: {item.agency}</p>
+            <p>Credits: {item.credits}</p>
+          </motion.div>
+        </Link>
       ))}
     </div>
   );
