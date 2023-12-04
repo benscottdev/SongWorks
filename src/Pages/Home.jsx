@@ -25,7 +25,7 @@ function Home() {
       img: "imgSrc",
       brief:
         "Write and produce a suite of fun jingles for radio across different genres for the iconic bakery’s Stars of Summer campaign. This was for their iconic frog cake and won 4 AADC Awards.",
-      link: "/",
+      link: "/starsofsummer",
     },
     {
       title: "Foodland",
