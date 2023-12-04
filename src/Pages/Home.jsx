@@ -2,6 +2,8 @@ import Header from "../Components/Header";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import AnimatedPages from "../Components/AnimatedPages";
+import img from "../Assets/image.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -10,7 +12,7 @@ function Home() {
       client: "Motor Accident Commission",
       agency: "Clemenger",
       credits: "Scott/Timms",
-      img: "imgSrc",
+      img: img,
       brief:
         "Write a radio campaign encouraging drivers to take a 15 minute break when travelling long distances. We went back to the 70s and created a super-refreshing one minute soft drink style jingle.",
       link: "/refreshyourdrive",
@@ -133,31 +135,33 @@ function Home() {
   };
 
   return (
-    <div className="homePage">
-      <Header />
-      {jobsToDisplayArray.map((item, index) => (
-        <Link to={item.link} style={{ textDecoration: "none" }}>
-          <motion.div
-            className="jobsToDisplay"
-            key={index}
-            onMouseEnter={() => {
-              handleHover(index);
-            }}
-            onMouseLeave={handleOffHover}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeIn",
-              delay: 0.15 * index + 0.5,
-              duration: 1,
-            }}
-            viewport={{ once: true }}
-          >
-            {hoveredItem === index && <h1>{item.title}</h1>}
-          </motion.div>
-        </Link>
-      ))}
-    </div>
+    <AnimatedPages>
+      <div className="homePage">
+        <Header />
+        {jobsToDisplayArray.map((item, index) => (
+          <Link to={item.link}>
+            <motion.div
+              className="jobsToDisplay"
+              key={index}
+              onMouseEnter={() => {
+                handleHover(index);
+              }}
+              onMouseLeave={handleOffHover}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                ease: "easeIn",
+                delay: 0.15 * index + 0.5,
+                duration: 1,
+              }}
+            >
+              <img src={item.img} alt="" />
+              {hoveredItem === index && <h1>{item.title}</h1>}
+            </motion.div>
+          </Link>
+        ))}
+      </div>
+    </AnimatedPages>
   );
 }
 export default Home;

@@ -13,7 +13,7 @@ function NavBar() {
         let's jam
       </Link>
       <div className="socialLogos">
-        <a href="#">
+        <a href="https://www.instagram.com/thesongworks/" target="_blank">
           <img src={instagramLogo} alt="Instagram Link" />
         </a>
         <a href="#">
