@@ -5,8 +5,8 @@ import NavBar from "./NavBar";
 function Header() {
   return (
     <div className="header">
-      <img src={swlogopink} alt="" />
-      {/* <NavBar /> */}
+      <NavBar />
+      <img src={swlogopink} id="swLogo" />
     </div>
   );
 }

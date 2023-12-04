@@ -1,6 +1,7 @@
 import Header from "../Components/Header";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -121,27 +122,38 @@ function Home() {
     },
   ];
 
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleHover = (index) => {
+    setHoveredItem(index);
+  };
+
+  const handleOffHover = () => {
+    setHoveredItem(null);
+  };
+
   return (
     <div className="homePage">
       <Header />
       {jobsToDisplayArray.map((item, index) => (
         <Link to={item.link} style={{ textDecoration: "none" }}>
           <motion.div
-            array={jobsToDisplayArray}
             className="jobsToDisplay"
             key={index}
+            onMouseEnter={() => {
+              handleHover(index);
+            }}
+            onMouseLeave={handleOffHover}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
               ease: "easeIn",
-              delay: 0.2 * index + 1,
+              delay: 0.15 * index + 0.5,
               duration: 1,
             }}
+            viewport={{ once: true }}
           >
-            <h1>{item.title}</h1>
-            <p>Client: {item.client}</p>
-            <p>Agency: {item.agency}</p>
-            <p>Credits: {item.credits}</p>
+            {hoveredItem === index && <h1>{item.title}</h1>}
           </motion.div>
         </Link>
       ))}

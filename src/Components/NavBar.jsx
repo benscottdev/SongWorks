@@ -1,17 +1,28 @@
+import { Link } from "react-router-dom";
+import instagramLogo from "../Assets/SW_instagramLogo.png";
+import facebookLogo from "../Assets/SW_facebookLogo.png";
+import twitterLogo from "../Assets/SW_twitterLogo.png";
+
 function NavBar() {
   return (
     <div className="navLinks">
-      <ul>
+      <Link className="navLinkButton" to="/about">
+        about
+      </Link>
+      <Link className="navLinkButton" to="/letsjam">
+        let's jam
+      </Link>
+      <div className="socialLogos">
         <a href="#">
-          <li>about me</li>
+          <img src={instagramLogo} alt="Instagram Link" />
         </a>
         <a href="#">
-          <li>work with me</li>
+          <img src={facebookLogo} alt="Facebook Link" />
         </a>
         <a href="#">
-          <li>let's jam</li>
+          <img src={twitterLogo} alt="Facebook Link" />
         </a>
-      </ul>
+      </div>
     </div>
   );
 }
