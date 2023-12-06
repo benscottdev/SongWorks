@@ -44,17 +44,17 @@ function Home() {
       img: foodland,
       brief:
         "Write and produce a track for a television commercial that captures what this beloved independent franchise means to the people of South Australia.",
-      link: "/",
+      link: "/foodland",
     },
     {
-      title: "COTA",
+      title: "COTA Travel Insurance",
       client: "COTA Travel Insurance",
       agency: "Showpony",
       credits: "Scott/Timms",
       img: cota,
       brief:
         "Write and produce a song for a television commercial targeting over 60s. With a ridiculous idea from Showpony’s Creative Director we made this stupidly fun and catchy track for TV.",
-      link: "/",
+      link: "/cota",
     },
     // {
     //   title: "Beaumont Tiles",
@@ -64,14 +64,14 @@ function Home() {
     //   img: "imgSrc",
     //   brief:
     //     "Write and produce a signature jingle for ongoing radio and TV commercials.",
-    //   link: "/",
+    //   link: "/beaumonr",
     // },
     // {
     //   title: "Laura Voicemail",
     //   client: "Private",
     //   img: "imgSrc",
     //   brief: "Write and produce a fun, personalised voicemail message.",
-    //   link: "/",
+    //   link: "/laura",
     // },
     {
       title: "Quit Your Way in May",
@@ -81,16 +81,16 @@ function Home() {
       img: quitYourWay,
       brief:
         "Write and produce a jingle for a radio and television campaign encouraging smokers to find their own way to give up cigarettes for the month of May.",
-      link: "/",
+      link: "/quityourway",
     },
     {
       title: "Fantastic Noodles",
-      client: "OTR",
+      client: "San Remo",
       agency: "Showpony",
       credits: "Scott/Illingworth",
       img: fantastic,
       brief: "",
-      link: "/",
+      link: "/fantasticnoodles",
     },
 
     {
@@ -100,7 +100,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: moesHotdogs,
       brief: "",
-      link: "/",
+      link: "/moes",
     },
 
     {
@@ -110,7 +110,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: happyWash,
       brief: "",
-      link: "/",
+      link: "/happywash",
     },
 
     {
@@ -120,7 +120,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: theGreenBin,
       brief: "",
-      link: "/",
+      link: "/thegreenbin",
     },
     {
       title: "Words Grow Minds",
@@ -129,7 +129,7 @@ function Home() {
       credits: "Scott/Illingworth",
       img: wordsGrowMinds,
       brief: "",
-      link: "/",
+      link: "/wordsgrowminds",
     },
   ];
 
@@ -165,7 +165,15 @@ function Home() {
               }}
             >
               <img src={item.img} alt="" />
-              {hoveredItem === index && <h1>{item.title}</h1>}
+              {hoveredItem === index && (
+                <motion.h1
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
+                  {item.title}
+                </motion.h1>
+              )}
             </motion.div>
           </Link>
         ))}

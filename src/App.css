@@ -99,7 +99,6 @@ body::-webkit-scrollbar {
 .jobsToDisplay {
   width: 320px;
   height: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +112,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   width: 470px;
   height: 264px;
-  background-color: rgba(227, 94, 160, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   letter-spacing: -2px;
 }
 
@@ -229,8 +228,6 @@ body::-webkit-scrollbar {
   color: #e35ea0;
 }
 
-@media (max-width: 600px) {
-  .homePage {
-    grid-template-columns: 1fr;
-  }
+.jobAboutContainer audio {
+  margin-right: 150px;
 }

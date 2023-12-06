@@ -6,6 +6,7 @@ function About() {
     <AnimatedPages>
       <div className="about">
         <BackBtn />
+
         <p>
           Words inspire action. Music inspires feeling. Be it a sparse,
           heartfelt soundtrack, or a wildly catchy jingle you’ll need surgically

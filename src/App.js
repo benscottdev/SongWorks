@@ -1,12 +1,21 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+import LandingPage from "./Pages/LandingPage";
 import Home from "./Pages/Home";
-import LetsJam from "./Pages/LetsJam";
 import About from "./Pages/About";
+import LetsJam from "./Pages/LetsJam";
+// Job Page Imports Below
 import RefreshYourDrive from "./Pages/Jobs/RefreshYourDrive";
 import StarsOfSummer from "./Pages/Jobs/StarsOfSummer";
-import LandingPage from "./Pages/LandingPage";
+import Foodland from "./Pages/Jobs/Foodland";
+import Cota from "./Pages/Jobs/Cota";
+import QuitYourWay from "./Pages/Jobs/QuitYourWay";
+import FantasticNoodles from "./Pages/Jobs/FantasticNoodles";
+import Moes from "./Pages/Jobs/Moes";
+import HappyWash from "./Pages/Jobs/HappyWash";
+import TheGreenBin from "./Pages/Jobs/TheGreenBin";
+import WordsGrowMinds from "./Pages/Jobs/WordsGrowMinds";
 
 function App() {
   const location = useLocation();
@@ -23,6 +32,14 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/refreshyourdrive" element={<RefreshYourDrive />} />
         <Route path="/starsofsummer" element={<StarsOfSummer />} />
+        <Route path="/foodland" element={<Foodland />} />
+        <Route path="/cota" element={<Cota />} />
+        <Route path="/quityourway" element={<QuitYourWay />} />
+        <Route path="/fantasticnoodles" element={<FantasticNoodles />} />
+        <Route path="/moes" element={<Moes />} />
+        <Route path="/happywash" element={<HappyWash />} />
+        <Route path="/thegreenbin" element={<TheGreenBin />} />
+        <Route path="/wordsgrowminds" element={<WordsGrowMinds />} />
       </Routes>
     </AnimatePresence>
   );

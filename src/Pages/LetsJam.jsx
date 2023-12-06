@@ -6,7 +6,9 @@ function LetsJam() {
     <AnimatedPages>
       <div className="letsJam">
         <BackBtn />
-        <h1>Let's Jam</h1>
+        <a href="mailto: benscott.dev@gmail.com">
+          <h1>Send Email</h1>
+        </a>
       </div>
     </AnimatedPages>
   );
