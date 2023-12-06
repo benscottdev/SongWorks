@@ -63,6 +63,7 @@ body::-webkit-scrollbar {
 }
 
 .header {
+  z-index: 1;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -90,7 +91,7 @@ body::-webkit-scrollbar {
   align-items: center;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  padding: 5px;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -99,7 +100,6 @@ body::-webkit-scrollbar {
   width: 470px;
   height: 264px;
   border: 1px solid #e35ea0;
-  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +113,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   width: 470px;
   height: 264px;
-  background-color: rgba(227, 94, 160, 0.6);
+  background-color: rgba(227, 94, 160, 0.5);
   letter-spacing: -2px;
 }
 
@@ -133,7 +133,7 @@ body::-webkit-scrollbar {
 .navLinkButton {
   color: #e35ea0;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .navLinkButton:hover {
@@ -155,7 +155,7 @@ body::-webkit-scrollbar {
 
 .socialLogos img {
   margin-top: 5px;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .socialLogos img:hover {
@@ -165,8 +165,12 @@ body::-webkit-scrollbar {
 .about {
   width: 100vh;
   height: 100vh;
-  color: rgb(227, 94, 160);
+  color: #ffffff;
   font-size: 24px;
+}
+
+.about b {
+  color: #e35ea0;
 }
 
 .about p {
@@ -177,6 +181,7 @@ body::-webkit-scrollbar {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
+  letter-spacing: -2px;
 }
 
 .jobAboutContainer {
@@ -199,12 +204,13 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  color: #e35ea0;
+  color: #ffffff;
 }
 
 .jobAbout h1 {
   letter-spacing: -2px;
   font-size: 40px;
+  color: #e35ea0;
 }
 
 .jobAbout h2 {
@@ -217,6 +223,7 @@ body::-webkit-scrollbar {
   font-weight: 100;
 }
 
-.jobAbout p b {
+.jobAbout b {
   font-size: 30px;
+  color: #e35ea0;
 }

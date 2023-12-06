@@ -6,7 +6,7 @@ function LandingPage() {
   return (
     <AnimatedPages>
       <div className="landingPage">
-        <video src="#" className="landingAnimation"></video>
+        <motion.video src={""} className="landingAnimation" autoPlay muted />
         {/* Below is in it's own motion.div so I can 
         make it appear after the animation has run */}
         <motion.div className="explore">

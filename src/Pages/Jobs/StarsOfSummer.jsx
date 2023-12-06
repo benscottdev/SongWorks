@@ -8,7 +8,7 @@ function StarsOfSummer() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <h1>Stars of Summer</h1>
-          <br />
+
           <h2>
             <b>Client:</b> Balfours Bakery
           </h2>

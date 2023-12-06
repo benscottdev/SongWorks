@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import AnimatedPages from "../Components/AnimatedPages";
-import img from "../Assets/image.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -12,7 +11,7 @@ function Home() {
       client: "Motor Accident Commission",
       agency: "Clemenger",
       credits: "Scott/Timms",
-      img: img,
+      img: "img",
       brief:
         "Write a radio campaign encouraging drivers to take a 15 minute break when travelling long distances. We went back to the 70s and created a super-refreshing one minute soft drink style jingle.",
       link: "/refreshyourdrive",

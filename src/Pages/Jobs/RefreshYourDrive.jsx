@@ -8,7 +8,6 @@ function RefreshYourDrive() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <h1>Refresh Your Drive</h1>
-          <br />
           <h2>
             <b>Client:</b> Motor Accident Commission
           </h2>
