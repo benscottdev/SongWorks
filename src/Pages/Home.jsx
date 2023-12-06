@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import AnimatedPages from "../Components/AnimatedPages";
+import cota from "../Assets/JobTiles/COTA.png";
+import fantastic from "../Assets/JobTiles/FantasticNoodles.png";
+import foodland from "../Assets/JobTiles/Foodland.png";
+import happyWash from "../Assets/JobTiles/HappyWash.png";
+import moesHotdogs from "../Assets/JobTiles/MoesHotdogs.png";
+import quitYourWay from "../Assets/JobTiles/QuitYourWayInMay.png";
+import refreshYourDrive from "../Assets/JobTiles/RefreshYourDrive.png";
+import starsOfSummer from "../Assets/JobTiles/StarsOfSummer.png";
+import theGreenBin from "../Assets/JobTiles/TheGreenBin.png";
+import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.png";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -11,7 +21,7 @@ function Home() {
       client: "Motor Accident Commission",
       agency: "Clemenger",
       credits: "Scott/Timms",
-      img: "img",
+      img: refreshYourDrive,
       brief:
         "Write a radio campaign encouraging drivers to take a 15 minute break when travelling long distances. We went back to the 70s and created a super-refreshing one minute soft drink style jingle.",
       link: "/refreshyourdrive",
@@ -21,7 +31,7 @@ function Home() {
       client: "Balfours Bakery",
       agency: "Showpony",
       credits: "Scott/Timms",
-      img: "imgSrc",
+      img: starsOfSummer,
       brief:
         "Write and produce a suite of fun jingles for radio across different genres for the iconic bakery’s Stars of Summer campaign. This was for their iconic frog cake and won 4 AADC Awards.",
       link: "/starsofsummer",
@@ -31,7 +41,7 @@ function Home() {
       client: "Foodland",
       agency: "KWP",
       credits: "Scott/Illingworth",
-      img: "imgSrc",
+      img: foodland,
       brief:
         "Write and produce a track for a television commercial that captures what this beloved independent franchise means to the people of South Australia.",
       link: "/",
@@ -41,34 +51,34 @@ function Home() {
       client: "COTA Travel Insurance",
       agency: "Showpony",
       credits: "Scott/Timms",
-      img: "imgSrc",
+      img: cota,
       brief:
         "Write and produce a song for a television commercial targeting over 60s. With a ridiculous idea from Showpony’s Creative Director we made this stupidly fun and catchy track for TV.",
       link: "/",
     },
-    {
-      title: "Beaumont Tiles",
-      client: "Beaumont Tiles",
-      agency: "Showpony",
-      credits: "Scott/Timms",
-      img: "imgSrc",
-      brief:
-        "Write and produce a signature jingle for ongoing radio and TV commercials.",
-      link: "/",
-    },
-    {
-      title: "Laura Voicemail",
-      client: "Private",
-      img: "imgSrc",
-      brief: "Write and produce a fun, personalised voicemail message.",
-      link: "/",
-    },
+    // {
+    //   title: "Beaumont Tiles",
+    //   client: "Beaumont Tiles",
+    //   agency: "Showpony",
+    //   credits: "Scott/Timms",
+    //   img: "imgSrc",
+    //   brief:
+    //     "Write and produce a signature jingle for ongoing radio and TV commercials.",
+    //   link: "/",
+    // },
+    // {
+    //   title: "Laura Voicemail",
+    //   client: "Private",
+    //   img: "imgSrc",
+    //   brief: "Write and produce a fun, personalised voicemail message.",
+    //   link: "/",
+    // },
     {
       title: "Quit Your Way in May",
       client: "SA Govt",
       agency: "Showpony",
       credits: "Scott/Timms",
-      img: "imgSrc",
+      img: quitYourWay,
       brief:
         "Write and produce a jingle for a radio and television campaign encouraging smokers to find their own way to give up cigarettes for the month of May.",
       link: "/",
@@ -78,7 +88,7 @@ function Home() {
       client: "OTR",
       agency: "Showpony",
       credits: "Scott/Illingworth",
-      img: "imgSrc",
+      img: fantastic,
       brief: "",
       link: "/",
     },
@@ -88,7 +98,7 @@ function Home() {
       client: "OTR",
       agency: "Showpony",
       credits: "Scott/Illingworth",
-      img: "imgSrc",
+      img: moesHotdogs,
       brief: "",
       link: "/",
     },
@@ -98,7 +108,7 @@ function Home() {
       client: "OTR",
       agency: "Showpony",
       credits: "Scott/Illingworth",
-      img: "imgSrc",
+      img: happyWash,
       brief: "",
       link: "/",
     },
@@ -108,7 +118,7 @@ function Home() {
       client: "OTR",
       agency: "Showpony",
       credits: "Scott/Illingworth",
-      img: "imgSrc",
+      img: theGreenBin,
       brief: "",
       link: "/",
     },
@@ -117,7 +127,7 @@ function Home() {
       client: "The Raising Literacy Taskforce",
       agency: "Showpony",
       credits: "Scott/Illingworth",
-      img: "imgSrc",
+      img: wordsGrowMinds,
       brief: "",
       link: "/",
     },
