@@ -135,10 +135,6 @@ function Home() {
       link: "/happywash",
     },
   ];
-<<<<<<< HEAD
-=======
-  const scrollRef = useRef(null);
->>>>>>> bc6fc3dcdbb8302411447a2215884f6960f36b50
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleHover = (index) => {
@@ -186,11 +182,7 @@ function Home() {
               whileInView={{ opacity: 1 }}
               transition={{
                 ease: "easeIn",
-<<<<<<< HEAD
                 delay: 0.1 * index + 1,
-=======
-                delay: 0.1 * index,
->>>>>>> bc6fc3dcdbb8302411447a2215884f6960f36b50
                 duration: 1,
               }}
               viewport={{ once: true, amount: 0.2 }}
