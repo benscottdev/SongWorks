@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7169830.css",
-    "main.js": "/static/js/main.298d04ef.js",
-    "static/media/FantasticNoodles.png": "/static/media/FantasticNoodles.51b4caae82d3927b7695.png",
-    "static/media/Foodland.png": "/static/media/Foodland.3666af16310dc3c40733.png",
-    "static/media/RefreshYourDrive.png": "/static/media/RefreshYourDrive.0b0d2f08f3d0e488ae3b.png",
-    "static/media/MoesHotdogs.png": "/static/media/MoesHotdogs.311b74d03ce2bd3cdf30.png",
-    "static/media/HappyWash.png": "/static/media/HappyWash.a48fc4d4ded90b4d8033.png",
-    "static/media/QuitYourWayInMay.png": "/static/media/QuitYourWayInMay.0e2b6cd2f7f7971a6c8e.png",
-    "static/media/COTA.png": "/static/media/COTA.7b0fb0f60cfbe8739f5e.png",
-    "static/media/WordsGrowMinds.png": "/static/media/WordsGrowMinds.81a8ed35fc344227b4d0.png",
-    "static/media/StarsOfSummer.png": "/static/media/StarsOfSummer.c7131180729ecd926cd3.png",
-    "static/media/TheGreenBin.png": "/static/media/TheGreenBin.a02682d377ea74a74648.png",
-    "static/media/SW_Black.png": "/static/media/SW_Black.089a0bfffd85b11ac733.png",
-    "index.html": "/index.html",
-    "main.b7169830.css.map": "/static/css/main.b7169830.css.map",
-    "main.298d04ef.js.map": "/static/js/main.298d04ef.js.map"
+    "main.css": "/song-works/static/css/main.b7169830.css",
+    "main.js": "/song-works/static/js/main.37f90393.js",
+    "static/media/FantasticNoodles.png": "/song-works/static/media/FantasticNoodles.51b4caae82d3927b7695.png",
+    "static/media/Foodland.png": "/song-works/static/media/Foodland.3666af16310dc3c40733.png",
+    "static/media/RefreshYourDrive.png": "/song-works/static/media/RefreshYourDrive.0b0d2f08f3d0e488ae3b.png",
+    "static/media/MoesHotdogs.png": "/song-works/static/media/MoesHotdogs.311b74d03ce2bd3cdf30.png",
+    "static/media/HappyWash.png": "/song-works/static/media/HappyWash.a48fc4d4ded90b4d8033.png",
+    "static/media/QuitYourWayInMay.png": "/song-works/static/media/QuitYourWayInMay.0e2b6cd2f7f7971a6c8e.png",
+    "static/media/COTA.png": "/song-works/static/media/COTA.7b0fb0f60cfbe8739f5e.png",
+    "static/media/WordsGrowMinds.png": "/song-works/static/media/WordsGrowMinds.81a8ed35fc344227b4d0.png",
+    "static/media/StarsOfSummer.png": "/song-works/static/media/StarsOfSummer.c7131180729ecd926cd3.png",
+    "static/media/TheGreenBin.png": "/song-works/static/media/TheGreenBin.a02682d377ea74a74648.png",
+    "static/media/SW_Black.png": "/song-works/static/media/SW_Black.089a0bfffd85b11ac733.png",
+    "index.html": "/song-works/index.html",
+    "main.b7169830.css.map": "/song-works/static/css/main.b7169830.css.map",
+    "main.37f90393.js.map": "/song-works/static/js/main.37f90393.js.map"
   },
   "entrypoints": [
     "static/css/main.b7169830.css",
-    "static/js/main.298d04ef.js"
+    "static/js/main.37f90393.js"
   ]
 }
