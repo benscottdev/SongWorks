@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import AnimatedPages from "../Components/AnimatedPages";
+// IMAGE IMPORTS BELOW
 import cota from "../Assets/JobTiles/COTA.png";
 import fantastic from "../Assets/JobTiles/FantasticNoodles.png";
 import foodland from "../Assets/JobTiles/Foodland.png";
@@ -13,9 +14,40 @@ import refreshYourDrive from "../Assets/JobTiles/RefreshYourDrive.png";
 import starsOfSummer from "../Assets/JobTiles/StarsOfSummer.png";
 import theGreenBin from "../Assets/JobTiles/TheGreenBin.png";
 import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.png";
+import arrow from "../Assets/arrow.png";
 
 function Home() {
   const jobsToDisplayArray = [
+    {
+      title: "Moe’s Hotdogs",
+      client: "OTR",
+      agency: "Showpony",
+      credits: "Scott/Illingworth",
+      img: moesHotdogs,
+      brief: "",
+      link: "/moes",
+    },
+    {
+      title: "Words Grow Minds",
+      client: "The Raising Literacy Taskforce",
+      agency: "Showpony",
+      credits: "Scott/Illingworth",
+      img: wordsGrowMinds,
+      brief: "",
+      link: "/wordsgrowminds",
+    },
+
+    {
+      title: "Quit Your Way in May",
+      client: "SA Govt",
+      agency: "Showpony",
+      credits: "Scott/Timms",
+      img: quitYourWay,
+      brief:
+        "Write and produce a jingle for a radio and television campaign encouraging smokers to find their own way to give up cigarettes for the month of May.",
+      link: "/quityourway",
+    },
+
     {
       title: "Refresh Your Drive",
       client: "Motor Accident Commission",
@@ -25,6 +57,15 @@ function Home() {
       brief:
         "Write a radio campaign encouraging drivers to take a 15 minute break when travelling long distances. We went back to the 70s and created a super-refreshing one minute soft drink style jingle.",
       link: "/refreshyourdrive",
+    },
+    {
+      title: "The Green Bin",
+      client: "OTR",
+      agency: "Showpony",
+      credits: "Scott/Illingworth",
+      img: theGreenBin,
+      brief: "",
+      link: "/thegreenbin",
     },
     {
       title: "Stars of Summer",
@@ -73,16 +114,7 @@ function Home() {
     //   brief: "Write and produce a fun, personalised voicemail message.",
     //   link: "/laura",
     // },
-    {
-      title: "Quit Your Way in May",
-      client: "SA Govt",
-      agency: "Showpony",
-      credits: "Scott/Timms",
-      img: quitYourWay,
-      brief:
-        "Write and produce a jingle for a radio and television campaign encouraging smokers to find their own way to give up cigarettes for the month of May.",
-      link: "/quityourway",
-    },
+
     {
       title: "Fantastic Noodles",
       client: "San Remo",
@@ -94,16 +126,6 @@ function Home() {
     },
 
     {
-      title: "Moe’s Hotdogs",
-      client: "OTR",
-      agency: "Showpony",
-      credits: "Scott/Illingworth",
-      img: moesHotdogs,
-      brief: "",
-      link: "/moes",
-    },
-
-    {
       title: "Happy Wash, Happy Car",
       client: "OTR",
       agency: "Showpony",
@@ -112,27 +134,7 @@ function Home() {
       brief: "",
       link: "/happywash",
     },
-
-    {
-      title: "The Green Bin",
-      client: "OTR",
-      agency: "Showpony",
-      credits: "Scott/Illingworth",
-      img: theGreenBin,
-      brief: "",
-      link: "/thegreenbin",
-    },
-    {
-      title: "Words Grow Minds",
-      client: "The Raising Literacy Taskforce",
-      agency: "Showpony",
-      credits: "Scott/Illingworth",
-      img: wordsGrowMinds,
-      brief: "",
-      link: "/wordsgrowminds",
-    },
   ];
-
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleHover = (index) => {
@@ -151,6 +153,7 @@ function Home() {
           <Link to={item.link}>
             <motion.div
               className="jobsToDisplay"
+              id="jobsToDisplay"
               key={index}
               onMouseEnter={() => {
                 handleHover(index);
@@ -160,7 +163,7 @@ function Home() {
               animate={{ opacity: 1 }}
               transition={{
                 ease: "easeIn",
-                delay: 0.15 * index + 0.5,
+                delay: 0.1 * index + 1,
                 duration: 1,
               }}
             >
