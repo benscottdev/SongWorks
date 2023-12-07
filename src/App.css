@@ -13,6 +13,13 @@ body {
   background-color: #eaeaea;
 }
 
+.animatedPage {
+  position: absolute;
+  width: 100%;
+  top: -5%;
+  height: 90vh;
+}
+
 .landingPage {
   width: 100%;
   height: 100vh;
@@ -46,20 +53,17 @@ body {
   color: #063866;
 }
 
-.backBtn {
-  font-size: 18px;
-  color: rgb(227, 94, 160);
-  font-weight: 900;
-  letter-spacing: -1.5px;
-  text-decoration: none;
+.backBtn img {
+  height: 30px;
+  width: 30px;
   position: relative;
-  top: 15px;
+  top: 60px;
   left: 15px;
   transition: 0.3s ease;
 }
 
-.backBtn:hover {
-  color: #151515;
+.backBtn img:hover {
+  filter: brightness(0);
 }
 
 .header {
@@ -81,7 +85,7 @@ body {
 }
 
 .homePage {
-  margin-top: 30vh;
+  margin-top: 35vh;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -93,7 +97,6 @@ body {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 400px;
 }
 
 .jobsToDisplay {
@@ -105,14 +108,14 @@ body {
 }
 
 .jobsToDisplay h1 {
-  color: white;
+  color: #151515;
+  font-size: 25px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 450px;
   height: 253px;
-  background-color: rgba(0, 0, 0, 0.7);
   letter-spacing: -2px;
 }
 
@@ -182,6 +185,7 @@ body {
   transform: translate(-50%, -50%);
   width: 800px;
   letter-spacing: -2px;
+  margin-top: 5%;
 }
 
 .jobAboutContainer {
@@ -262,12 +266,32 @@ body {
   font-weight: 100;
 }
 
+@media (max-width: 1400px) {
+  .jobsToDisplay img {
+    width: 300px;
+  }
+}
+
 @media (max-width: 550px) {
   .homePage {
+    width: auto;
     grid-template-columns: 1fr;
   }
-  .homePage img {
-    scale: 75%;
+  .jobsToDisplay img {
+    width: 300px;
+  }
+
+  .jobsToDisplay h1 {
+    width: 300px;
+    height: 169px;
+  }
+
+  #swLogo {
+    width: 200px;
+  }
+
+  .navLinks {
+    font-size: 25px;
   }
 
   .about p {

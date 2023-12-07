@@ -35,6 +35,8 @@ function IWantYou() {
             important government health service. It never made it to air, so if
             anyone can use it for something, sing out.
           </p>
+          <br />
+          <p>Click the image to hear...</p>
         </div>
         <img
           style={{ cursor: "pointer" }}

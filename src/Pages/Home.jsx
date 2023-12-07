@@ -2,6 +2,7 @@ import Header from "../Components/Header";
 import { Link } from "react-router-dom";
 import { motion, useTime } from "framer-motion";
 import { useState, useRef } from "react";
+import { blur } from "react-blur";
 import AnimatedPages from "../Components/AnimatedPages";
 // IMAGE IMPORTS BELOW
 import cota from "../Assets/JobTiles/COTA.png";
@@ -69,15 +70,16 @@ function Home() {
       link: "/thegreenbin",
     },
     {
-      title: "Stars of Summer",
-      client: "Balfours Bakery",
+      title: "COTA Travel Insurance",
+      client: "COTA Travel Insurance",
       agency: "Showpony",
       credits: "Scott/Timms",
-      img: starsOfSummer,
+      img: cota,
       brief:
-        "Write and produce a suite of fun jingles for radio across different genres for the iconic bakery’s Stars of Summer campaign. This was for their iconic frog cake and won 4 AADC Awards.",
-      link: "/starsofsummer",
+        "Write and produce a song for a television commercial targeting over 60s. With a ridiculous idea from Showpony’s Creative Director we made this stupidly fun and catchy track for TV.",
+      link: "/cota",
     },
+
     {
       title: "Foodland",
       client: "Foodland",
@@ -89,15 +91,16 @@ function Home() {
       link: "/foodland",
     },
     {
-      title: "COTA Travel Insurance",
-      client: "COTA Travel Insurance",
+      title: "Stars of Summer",
+      client: "Balfours Bakery",
       agency: "Showpony",
       credits: "Scott/Timms",
-      img: cota,
+      img: starsOfSummer,
       brief:
-        "Write and produce a song for a television commercial targeting over 60s. With a ridiculous idea from Showpony’s Creative Director we made this stupidly fun and catchy track for TV.",
-      link: "/cota",
+        "Write and produce a suite of fun jingles for radio across different genres for the iconic bakery’s Stars of Summer campaign. This was for their iconic frog cake and won 4 AADC Awards.",
+      link: "/starsofsummer",
     },
+
     // {
     //   title: "Beaumont Tiles",
     //   client: "Beaumont Tiles",
@@ -178,13 +181,13 @@ function Home() {
                 duration: 1,
               }}
             >
-              <img src={item.img} alt="" />
+              <img
+                src={item.img}
+                alt=""
+                style={{ opacity: hoveredItem === index ? 0.2 : 1 }}
+              />
               {hoveredItem === index && (
-                <motion.h1
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                >
+                <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                   {item.title}
                 </motion.h1>
               )}
