@@ -16,6 +16,7 @@ import Moes from "./Pages/Jobs/Moes";
 import HappyWash from "./Pages/Jobs/HappyWash";
 import TheGreenBin from "./Pages/Jobs/TheGreenBin";
 import WordsGrowMinds from "./Pages/Jobs/WordsGrowMinds";
+import IWantYou from "./Pages/Jobs/IWantYou";
 
 function App() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function App() {
         <Route path="/happywash" element={<HappyWash />} />
         <Route path="/thegreenbin" element={<TheGreenBin />} />
         <Route path="/wordsgrowminds" element={<WordsGrowMinds />} />
+        <Route path="/iwantyou" element={<IWantYou />} />
       </Routes>
     </AnimatePresence>
   );

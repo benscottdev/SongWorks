@@ -14,7 +14,7 @@ import refreshYourDrive from "../Assets/JobTiles/RefreshYourDrive.png";
 import starsOfSummer from "../Assets/JobTiles/StarsOfSummer.png";
 import theGreenBin from "../Assets/JobTiles/TheGreenBin.png";
 import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.png";
-import arrow from "../Assets/arrow.png";
+import iwantyou from "../Assets/JobTiles/IWantYou.png";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -60,11 +60,12 @@ function Home() {
     },
     {
       title: "The Green Bin",
-      client: "OTR",
+      client: "Green Industries",
       agency: "Showpony",
       credits: "Scott/Illingworth",
       img: theGreenBin,
-      brief: "",
+      brief:
+        "Green Industries needed to make a complicated, forgettable message one that people would remember as they weighed up what goes in the green bin.",
       link: "/thegreenbin",
     },
     {
@@ -134,7 +135,17 @@ function Home() {
       brief: "",
       link: "/happywash",
     },
+    {
+      title: "Pitch Track",
+      client: "SA Govt",
+      agency: "Showpony",
+      img: iwantyou,
+      brief:
+        "We created this track for an emotive video, raising awareness of an important government health service. It never made it to air, so if anyone can use it for something, sing out. ",
+      link: "/iwantyou",
+    },
   ];
+
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleHover = (index) => {
@@ -147,25 +158,6 @@ function Home() {
 
   return (
     <AnimatedPages>
-      <div className="about">
-        <p>
-          Words inspire action. Music inspires feeling. Be it a sparse,
-          heartfelt soundtrack, or a wildly catchy jingle you’ll need surgically
-          removed from your temporal lobe, music is one of the most powerful
-          communication tools. Add humour, some rhythmic rhymes, or a
-          beautifully crafted script, and what could have been a pretty ordinary
-          execution becomes unforgettable, creating an emotional connection
-          between people, stories, services or products. At <b>Songworks</b>,
-          our musicians, writers and producers are dedicated to making
-          outstanding commercial music your audience will feel and remember.
-        </p>
-      </div>
-      <div className="scroll">
-        {/* <h1 className="scrollDown">Scroll Down...</h1> */}
-        <a href="#jobsToDisplay">
-          <img src={arrow} alt="" />
-        </a>
-      </div>
       <div className="homePage">
         <Header />
         {jobsToDisplayArray.map((item, index) => (
@@ -179,13 +171,12 @@ function Home() {
               }}
               onMouseLeave={handleOffHover}
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
               transition={{
                 ease: "easeIn",
                 delay: 0.1 * index + 1,
                 duration: 1,
               }}
-              viewport={{ once: true, amount: 0.2 }}
             >
               <img src={item.img} alt="" />
               {hoveredItem === index && (

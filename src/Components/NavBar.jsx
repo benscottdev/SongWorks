@@ -9,7 +9,6 @@ import twitterLogoW from "../Assets/WHITE_twitterLogo.png";
 function NavBar() {
   return (
     <div className="navLinks">
-      HEAD
       <Link className="navLinkButton" to="/about">
         the story.
       </Link>

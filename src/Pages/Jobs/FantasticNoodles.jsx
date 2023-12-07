@@ -1,5 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import BackBtn from "../../Components/BackBtn";
+import fantasticNoodlesVideo from "../../Assets/JobPageAssets/YTTC_H264.mp4";
 
 function FantasticNoodles() {
   return (
@@ -20,7 +21,13 @@ function FantasticNoodles() {
           <br />
           <p></p>
         </div>
-        <img src="#" alt="Place Image Here" />
+        <video
+          src={fantasticNoodlesVideo}
+          controls
+          type="video/mp4"
+          controlsList="nodownload noremoteplayback"
+          disablePictureInPicture
+        />
       </div>
     </AnimatedPages>
   );

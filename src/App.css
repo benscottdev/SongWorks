@@ -9,6 +9,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body {
+  background-color: #eaeaea;
+}
+
 .landingPage {
   width: 100%;
   height: 100vh;
@@ -64,8 +68,8 @@ body::-webkit-scrollbar {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 20vh;
-  background-color: #063866;
+  height: 30vh;
+  background-color: #eaeaea;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +81,7 @@ body::-webkit-scrollbar {
 }
 
 .homePage {
-  margin-top: 20vh;
+  margin-top: 30vh;
   width: 100%;
   height: 100vh;
   display: grid;
@@ -89,6 +93,7 @@ body::-webkit-scrollbar {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 400px;
 }
 
 .jobsToDisplay {
@@ -179,21 +184,6 @@ body::-webkit-scrollbar {
   letter-spacing: -2px;
 }
 
-.scroll {
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 625px;
-  color: #dfdfdf;
-}
-
-.scroll img {
-  width: 20px;
-}
-
 .jobAboutContainer {
   width: 100%;
   height: 100vh;
@@ -203,10 +193,14 @@ body::-webkit-scrollbar {
   padding: 100px;
 }
 
+.jobAboutContainer video {
+  width: 650px;
+  height: 366px;
+}
+
 .jobAboutContainer img {
   width: 650px;
   height: 366px;
-  border: 1px solid #e35ea0;
 }
 
 .jobAbout {
@@ -214,7 +208,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  color: #ffffff;
+  color: #151515;
 }
 
 .jobAbout h1 {
