@@ -1,8 +1,9 @@
 import Header from "../Components/Header";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion, useTime } from "framer-motion";
+import { useState, useRef } from "react";
 import AnimatedPages from "../Components/AnimatedPages";
+// IMAGE IMPORTS BELOW
 import cota from "../Assets/JobTiles/COTA.png";
 import fantastic from "../Assets/JobTiles/FantasticNoodles.png";
 import foodland from "../Assets/JobTiles/Foodland.png";
@@ -13,6 +14,7 @@ import refreshYourDrive from "../Assets/JobTiles/RefreshYourDrive.png";
 import starsOfSummer from "../Assets/JobTiles/StarsOfSummer.png";
 import theGreenBin from "../Assets/JobTiles/TheGreenBin.png";
 import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.png";
+import arrow from "../Assets/arrow.png";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -132,7 +134,7 @@ function Home() {
       link: "/wordsgrowminds",
     },
   ];
-
+  const scrollRef = useRef(null);
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleHover = (index) => {
@@ -145,24 +147,45 @@ function Home() {
 
   return (
     <AnimatedPages>
+      <div className="about">
+        <p>
+          Words inspire action. Music inspires feeling. Be it a sparse,
+          heartfelt soundtrack, or a wildly catchy jingle you’ll need surgically
+          removed from your temporal lobe, music is one of the most powerful
+          communication tools. Add humour, some rhythmic rhymes, or a
+          beautifully crafted script, and what could have been a pretty ordinary
+          execution becomes unforgettable, creating an emotional connection
+          between people, stories, services or products. At <b>Songworks</b>,
+          our musicians, writers and producers are dedicated to making
+          outstanding commercial music your audience will feel and remember.
+        </p>
+      </div>
+      <div className="scroll">
+        {/* <h1 className="scrollDown">Scroll Down...</h1> */}
+        <a href="#jobsToDisplay">
+          <img src={arrow} alt="" />
+        </a>
+      </div>
       <div className="homePage">
         <Header />
         {jobsToDisplayArray.map((item, index) => (
           <Link to={item.link}>
             <motion.div
               className="jobsToDisplay"
+              id="jobsToDisplay"
               key={index}
               onMouseEnter={() => {
                 handleHover(index);
               }}
               onMouseLeave={handleOffHover}
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
               transition={{
                 ease: "easeIn",
-                delay: 0.15 * index + 0.5,
+                delay: 0.1 * index,
                 duration: 1,
               }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <img src={item.img} alt="" />
               {hoveredItem === index && (
