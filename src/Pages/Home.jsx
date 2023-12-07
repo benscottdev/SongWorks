@@ -1,7 +1,7 @@
 import Header from "../Components/Header";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion, useTime } from "framer-motion";
+import { useState, useRef } from "react";
 import AnimatedPages from "../Components/AnimatedPages";
 // IMAGE IMPORTS BELOW
 import cota from "../Assets/JobTiles/COTA.png";
@@ -135,6 +135,10 @@ function Home() {
       link: "/happywash",
     },
   ];
+<<<<<<< HEAD
+=======
+  const scrollRef = useRef(null);
+>>>>>>> bc6fc3dcdbb8302411447a2215884f6960f36b50
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const handleHover = (index) => {
@@ -147,6 +151,25 @@ function Home() {
 
   return (
     <AnimatedPages>
+      <div className="about">
+        <p>
+          Words inspire action. Music inspires feeling. Be it a sparse,
+          heartfelt soundtrack, or a wildly catchy jingle you’ll need surgically
+          removed from your temporal lobe, music is one of the most powerful
+          communication tools. Add humour, some rhythmic rhymes, or a
+          beautifully crafted script, and what could have been a pretty ordinary
+          execution becomes unforgettable, creating an emotional connection
+          between people, stories, services or products. At <b>Songworks</b>,
+          our musicians, writers and producers are dedicated to making
+          outstanding commercial music your audience will feel and remember.
+        </p>
+      </div>
+      <div className="scroll">
+        {/* <h1 className="scrollDown">Scroll Down...</h1> */}
+        <a href="#jobsToDisplay">
+          <img src={arrow} alt="" />
+        </a>
+      </div>
       <div className="homePage">
         <Header />
         {jobsToDisplayArray.map((item, index) => (
@@ -160,12 +183,17 @@ function Home() {
               }}
               onMouseLeave={handleOffHover}
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
               transition={{
                 ease: "easeIn",
+<<<<<<< HEAD
                 delay: 0.1 * index + 1,
+=======
+                delay: 0.1 * index,
+>>>>>>> bc6fc3dcdbb8302411447a2215884f6960f36b50
                 duration: 1,
               }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <img src={item.img} alt="" />
               {hoveredItem === index && (

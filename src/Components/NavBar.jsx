@@ -9,9 +9,15 @@ import twitterLogoW from "../Assets/WHITE_twitterLogo.png";
 function NavBar() {
   return (
     <div className="navLinks">
+<<<<<<< HEAD
       <Link className="navLinkButton" to="/about">
         the story.
       </Link>
+=======
+      {/* <Link className="navLinkButton" to="/about">
+        about.
+      </Link> */}
+>>>>>>> bc6fc3dcdbb8302411447a2215884f6960f36b50
       <Link className="navLinkButton" to="/letsjam">
         let's jam.
       </Link>
