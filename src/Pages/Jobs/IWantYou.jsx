@@ -29,9 +29,13 @@ function IWantYou() {
             alt="Place Image Here"
             onClick={handleImageClick}
           />
-          <p>NEEDS COPY</p>
-          <br />
-          <p>Click the image to hear...</p>
+          <p>
+            <b>Health Services Pitch.</b> While the campaign never went ahead,
+            we pitched this track/concept to encourage a vulnerable cohort to
+            get an important health test – if not for them, for the ones they
+            love. The video was a tonal guide for pitch purposes only. <br />
+            <b>Client:</b> SA Government | <b>Agency:</b> Showpony
+          </p>
         </div>
       </div>
       <audio ref={audioRef} src={iWantYouAudio} />

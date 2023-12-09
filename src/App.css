@@ -211,6 +211,7 @@ body {
   flex-direction: column;
   padding: 100px;
   margin-top: 100px;
+  overflow: hidden;
 }
 
 .jobAboutContainer video {
@@ -261,7 +262,7 @@ body {
   font-weight: 100;
 }
 
-@media (min-width: 1100px) and (max-width: 1400px) {
+@media (min-width: 1100px) and (max-width: 1399px) {
   .jobsToDisplay img {
     width: 400px;
   }

@@ -15,6 +15,7 @@ import starsOfSummer from "../Assets/JobTiles/StarsOfSummer.jpg";
 import theGreenBin from "../Assets/JobTiles/TheGreenBin.jpg";
 import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.jpg";
 import iwantyou from "../Assets/JobTiles/IWantYou.jpg";
+import wikiCamps from "../Assets/JobTiles/Wikicamps.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -99,30 +100,18 @@ function Home() {
       link: "/happywash",
     },
     {
-      title: "Pitch Track",
+      title: "Health Services Pitch",
       client: "SA Govt",
       agency: "Showpony",
       img: iwantyou,
       link: "/iwantyou",
     },
     {
-      title: "Health Services",
-      client: "SA Govt",
-      agency: "Showpony",
-      credits: "Scott/Timms",
-      brief:
-        "While the campaign never went ahead, we pitched this track/concept to encourage a vulnerable cohort to get an important health test – if not for them, for the ones they love. The video was a tonal guide for pitch purposes only.",
-      img: "imgSrc",
-      link: "/",
-    },
-    {
       title: "Wikicamps",
       client: "Wikicamps",
       agency: "Showpony",
-      brief:
-        "Written for international camp info site Wikicamps, we brought some acoustic campfire comfort to this feel-good sting.",
-      img: "imgSrc",
-      link: "/",
+      img: wikiCamps,
+      link: "/wikicamps",
     },
   ];
 
