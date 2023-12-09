@@ -1,33 +1,26 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
-import fantasticNoodlesVideo from "../../Assets/JobPageAssets/YTTC_H264.mp4";
+import fantasticNoodlesVideo from "../../Assets/JobPageAssets/Videos/YupToTheCup_VIDEO.mp4";
+import Header from "../../Components/Header";
 
 function FantasticNoodles() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Fantastic Noodles</h1>
-          <h2>
-            <b>Client:</b> San Remo
-          </h2>
-          <h2>
-            <b>Agency:</b>
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Illingworth
-          </h2>
-          <br />
-          <p></p>
+          <video
+            src={fantasticNoodlesVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
+          <p>
+            <b>Fantastic Cup Noodles.</b> This wacky track gave Fantastic
+            Noodles ownership of the crowded cup noodle category. <br />
+            <b>Client:</b> San Remo | <b>Agency:</b> Showpony
+          </p>
         </div>
-        <video
-          src={fantasticNoodlesVideo}
-          controls
-          type="video/mp4"
-          controlsList="nodownload noremoteplayback"
-          disablePictureInPicture
-        />
       </div>
     </AnimatedPages>
   );

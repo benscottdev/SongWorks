@@ -1,11 +1,10 @@
 import AnimatedPages from "../Components/AnimatedPages";
-import BackBtn from "../Components/BackBtn";
-import instagram from "../Assets/SW_instagramLogo.png";
+import Header from "../Components/Header";
 
 function LetsJam() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="letsJam">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit

@@ -1,26 +1,28 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+
+import happyWashVideo from "../../Assets/JobPageAssets/Videos/HappyWash_VIDEO.mp4";
+import Header from "../../Components/Header";
 
 function HappyWash() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Happy Wash, Happy Car</h1>
-          <h2>
-            <b>Client:</b> OTR
-          </h2>
-          <h2>
-            <b>Agency:</b>
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Illingworth
-          </h2>
-          <br />
-          <p></p>
+          <video
+            src={happyWashVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
+          <p>
+            <b>Happy Wash.</b> Car owners aren’t huge fans of visiting
+            car-washes, so we wrote a track encouraging them to do it for their
+            car. <br />
+            <b>Client:</b> OTR | <b>Agency:</b> Showpony
+          </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

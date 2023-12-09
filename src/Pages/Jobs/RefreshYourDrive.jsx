@@ -1,30 +1,27 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import Header from "../../Components/Header";
+import refreshYourDriveVideo from "../../Assets/JobPageAssets/Videos/RefreshYourDrive_VIDEO.mp4";
 
 function RefreshYourDrive() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Refresh Your Drive</h1>
-          <h2>
-            <b>Client:</b> Motor Accident Commission
-          </h2>
-          <h2>
-            <b>Agency:</b> Clemenger
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Timms
-          </h2>
-          <br />
+          <video
+            src={refreshYourDriveVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
           <p>
-            Write a radio campaign encouraging drivers to take a 15 minute break
-            when travelling long distances. We went back to the 70s and created
-            a super-refreshing one minute soft drink style jingle.
+            <b>Refresh Your Drive.</b> This super bubbly 70’s soft-drink style
+            jingle encourages drivers to take a refreshing break on long trips.
+            <br />
+            <b>Client:</b> Motor Accident Commission | <b>Agency:</b> Clemenger
           </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

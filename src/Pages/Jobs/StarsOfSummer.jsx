@@ -1,31 +1,27 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import Header from "../../Components/Header";
+import starsOfSummerVideo from "../../Assets/JobPageAssets/Videos/StarsOfSummer_VIDEO.mp4";
 
 function StarsOfSummer() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Stars of Summer</h1>
-
-          <h2>
-            <b>Client:</b> Balfours Bakery
-          </h2>
-          <h2>
-            <b>Agency:</b> Showpony
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Timms
-          </h2>
-          <br />
+          <video
+            src={starsOfSummerVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
           <p>
-            Write and produce a suite of fun jingles for radio across different
-            genres for the iconic bakery’s Stars of Summer campaign. This was
-            for their iconic frog cake and won 4 AADC Awards.
+            <b>Stars of Summer.</b> Promoting their iconic frog cake, this was
+            one of 4 radio jingles we made for the Balfours Bakery ‘Stars of
+            Summer’ campaign. <br /> <b>Client:</b> Balfours Bakery |{" "}
+            <b>Agency:</b> Showpony
           </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

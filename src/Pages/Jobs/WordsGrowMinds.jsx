@@ -1,26 +1,27 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import Header from "../../Components/Header";
+import wordsGrowMindsVideo from "../../Assets/JobPageAssets/Videos/WordsGrowMinds_VIDEO.mp4";
 
 function WordsGrowMinds() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Words Grow Minds</h1>
-          <h2>
-            <b>Client:</b> The Raising Literacy Taskforce
-          </h2>
-          <h2>
-            <b>Agency:</b>
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Illingworth
-          </h2>
-          <br />
-          <p></p>
+          <video
+            src={wordsGrowMindsVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
+          <p>
+            <b>Words Grow Minds.</b> Beautifully animated, this track forms the
+            basis of a wider campaign encouraging parents to engage more with
+            their babies and help grow their minds. <br />
+            <b>Client:</b> The Early Years Taskforce | <b>Agency:</b> Showpony
+          </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

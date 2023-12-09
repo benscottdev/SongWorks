@@ -1,30 +1,27 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import Header from "../../Components/Header";
+import quitYourWayVideo from "../../Assets/JobPageAssets/Videos/QuitYourWay_VIDEO.mp4";
 
 function QuitYourWay() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Quit Your Way in May</h1>
-          <h2>
-            <b>Client:</b> SA Government
-          </h2>
-          <h2>
-            <b>Agency:</b> Showpony
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Timms
-          </h2>
-          <br />
+          <video
+            src={quitYourWayVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
           <p>
-            Write and produce a jingle for a radio and television campaign
-            encouraging smokers to find their own way to give up cigarettes for
-            the month of May.
+            <b>Quit Your Way in May.</b> Drug and Alcohol Services needed a way
+            to encourage smokers to give up cigarettes during their ‘Quit Your
+            Way In May’ campaign. <br />
+            <b>Client:</b> SA Govt | <b>Agency:</b> Showpony
           </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

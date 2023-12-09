@@ -1,30 +1,26 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import cotaVideo from "../../Assets/JobPageAssets/Videos/Cota_VIDEO.mp4";
+import Header from "../../Components/Header";
 
 function Cota() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>COTA</h1>
-          <h2>
-            <b>Client:</b> COTA Travel Insurance
-          </h2>
-          <h2>
-            <b>Agency:</b> Showpony
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Timms
-          </h2>
-          <br />
+          <video
+            src={cotaVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
           <p>
-            Write and produce a song for a television commercial targeting over
-            60s. With a ridiculous idea from Showpony’s Creative Director we
-            made this stupidly fun and catchy track for TV.{" "}
+            <b>COTA Travel Insurance.</b> A ridiculous idea from Showpony’s
+            Creative Director became an equally ridiculous TVC. <br />
+            <b>Client:</b> COTA Travel Insurance | <b>Agency:</b> Showpony
           </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

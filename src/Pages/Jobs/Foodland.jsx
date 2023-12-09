@@ -1,30 +1,28 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+
+import foodlandVideo from "../../Assets/JobPageAssets/Videos/Foodland_VIDEO.mp4";
+import Header from "../../Components/Header";
 
 function Foodland() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Foodland</h1>
-          <h2>
-            <b>Client:</b> Foodland
-          </h2>
-          <h2>
-            <b>Agency:</b> KWP
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Illingworth
-          </h2>
-          <br />
+          <video
+            src={foodlandVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
           <p>
-            Write and produce a track for a television commercial that captures
-            what this beloved independent franchise means to the people of South
-            Australia.
+            <b>Foodland.</b> A pitch-winning track that tells the story of
+            Foodland’s commitment to provide the people of South Australia with
+            great, homegrown produce. <br /> <b>Client:</b> Foodland |{" "}
+            <b>Agency:</b> KWP
           </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

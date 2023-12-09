@@ -1,26 +1,27 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import Header from "../../Components/Header";
+import moesVideo from "../../Assets/JobPageAssets/Videos/GoAMoes_VIDEO.mp4";
 
 function Moes() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Moe's Hotdogs</h1>
-          <h2>
-            <b>Client:</b> OTR
-          </h2>
-          <h2>
-            <b>Agency:</b>
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Illingworth
-          </h2>
-          <br />
-          <p></p>
+          <video
+            src={moesVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
+          <p>
+            <b>Moe’s Hotdogs.</b> Winning 3 coveted Effie Awards, this jingle
+            formed the basis of a wildly successful hot dog campaign for an
+            Australian convenience chain. <br />
+            <b>Client:</b> OTR | <b>Agency:</b> Showpony
+          </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );

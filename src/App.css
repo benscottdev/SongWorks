@@ -13,6 +13,10 @@ body {
   background-color: #eaeaea;
 }
 
+:root {
+  --grid-gap: 10px; /* Set your desired gap value */
+}
+
 .animatedPage {
   position: absolute;
   width: 100%;
@@ -66,7 +70,7 @@ body {
   filter: brightness(0);
 }
 
-.header {
+.homeHeader {
   z-index: 1;
   position: fixed;
   top: 0px;
@@ -77,26 +81,37 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+}
+
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 25vh;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #swLogo {
-  width: 380px;
+  width: 300px;
   margin: 20px;
 }
 
 .homePage {
-  margin-top: 35vh;
+  margin-top: 30vh;
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
   justify-items: center;
   align-items: center;
-  grid-column-gap: 5px;
-  grid-row-gap: 25px;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-gap: var(--grid-gap);
 }
 
 .jobsToDisplay {
@@ -108,7 +123,6 @@ body {
 }
 
 .jobsToDisplay h1 {
-  color: #151515;
   font-size: 25px;
   position: absolute;
   display: flex;
@@ -192,9 +206,11 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 100px;
+  margin-top: 100px;
 }
 
 .jobAboutContainer video {
@@ -207,33 +223,15 @@ body {
   height: 366px;
 }
 
-.jobAbout {
-  width: 500px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+.jobAbout p {
+  margin-top: 25px;
+  text-align: center;
+  width: 650px;
   color: #151515;
-}
-
-.jobAbout h1 {
-  letter-spacing: -2px;
-  font-size: 40px;
-  color: #e35ea0;
-}
-
-.jobAbout h2 {
-  letter-spacing: -2px;
-  font-weight: 100;
-  font-size: 30px;
 }
 
 .jobAbout p {
   font-weight: 100;
-}
-
-.jobAbout b {
-  font-size: 30px;
-  color: #e35ea0;
 }
 
 .jobAboutContainer audio {
@@ -242,15 +240,12 @@ body {
 
 .letsJam {
   width: 100%;
+  margin-top: 100px;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.letsJam img {
-  width: 30px;
 }
 
 .letsJam p {
@@ -266,12 +261,16 @@ body {
   font-weight: 100;
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1100px) and (max-width: 1400px) {
   .jobsToDisplay img {
-    width: 300px;
+    width: 400px;
+  }
+  .homePage {
+    padding: 60px;
   }
 }
 
+/* 
 @media (max-width: 550px) {
   .homePage {
     width: auto;
@@ -297,4 +296,4 @@ body {
   .about p {
     width: 400px;
   }
-}
+} */

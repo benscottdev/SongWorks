@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
-import iwantyou from "../../Assets/JobTiles/IWantYou.png";
-import iWantYouAudio from "../../Assets/JobPageAssets/iWantYouAudio.mp3";
+
+import iwantyou from "../../Assets/JobTiles/IWantYou.jpg";
+import iWantYouAudio from "../../Assets/JobPageAssets//Audio/iWantYouAudio.mp3";
+import Header from "../../Components/Header";
 
 function IWantYou() {
   const audioRef = useRef(null);
@@ -19,31 +20,19 @@ function IWantYou() {
 
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>Pitch Track</h1>
-          <h2>
-            <b>Client:</b> SA Government
-          </h2>
-          <h2>
-            <b>Agency:</b> Showpony
-          </h2>
-          <br />
-          <p>
-            We created this track for an emotive video, raising awareness of an
-            important government health service. It never made it to air, so if
-            anyone can use it for something, sing out.
-          </p>
+          <img
+            style={{ cursor: "pointer" }}
+            src={iwantyou}
+            alt="Place Image Here"
+            onClick={handleImageClick}
+          />
+          <p>NEEDS COPY</p>
           <br />
           <p>Click the image to hear...</p>
         </div>
-        <img
-          style={{ cursor: "pointer" }}
-          src={iwantyou}
-          alt="Place Image Here"
-          onClick={handleImageClick}
-        />
       </div>
       <audio ref={audioRef} src={iWantYouAudio} />
     </AnimatedPages>

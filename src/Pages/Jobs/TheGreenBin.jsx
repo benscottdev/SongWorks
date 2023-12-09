@@ -1,30 +1,26 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import BackBtn from "../../Components/BackBtn";
+import Header from "../../Components/Header";
+import theGreenBinVideo from "../../Assets/JobPageAssets/Videos/TheGreenBin_VIDEO.mp4";
 
 function TheGreenBin() {
   return (
     <AnimatedPages>
-      <BackBtn />
+      <Header />
       <div className="jobAboutContainer">
         <div className="jobAbout">
-          <h1>The Green Bin</h1>
-          <h2>
-            <b>Client:</b> Green Industries
-          </h2>
-          <h2>
-            <b>Agency:</b>
-          </h2>
-          <h2>
-            <b>Credits:</b> Scott/Illingworth
-          </h2>
-          <br />
+          <video
+            src={theGreenBinVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
+          />
           <p>
-            Green Industries needed to make a complicated, forgettable message
-            one that people would remember as they weighed up what goes in the
-            green bin.
+            <b>The Green Bin.</b> How do you help people remember the long list
+            of things that can go in the green bin? <br />
+            <b>Client:</b> Green Industries | <b>Agency</b>: Showpony
           </p>
         </div>
-        <img src="#" alt="Place Image Here" />
       </div>
     </AnimatedPages>
   );
