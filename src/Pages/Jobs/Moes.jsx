@@ -18,8 +18,8 @@ function Moes() {
           <p>
             <b>Moe’s Hotdogs.</b> Winning 3 coveted Effie Awards, this jingle
             formed the basis of a wildly successful hot dog campaign for an
-            Australian convenience chain. <br />
-            <b>Client:</b> OTR | <b>Agency:</b> Showpony
+            Australian convenience chain. <b>Client:</b> OTR <br />{" "}
+            <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

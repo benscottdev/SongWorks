@@ -19,7 +19,7 @@ function Foodland() {
           <p>
             <b>Foodland.</b> A pitch-winning track that tells the story of
             Foodland’s commitment to provide the people of South Australia with
-            great, homegrown produce. <br /> <b>Client:</b> Foodland |{" "}
+            great, homegrown produce. <b>Client:</b> Foodland <br />{" "}
             <b>Agency:</b> KWP
           </p>
         </div>

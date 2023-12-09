@@ -17,8 +17,8 @@ function Cota() {
           />
           <p>
             <b>COTA Travel Insurance.</b> A ridiculous idea from Showpony’s
-            Creative Director became an equally ridiculous TVC. <br />
-            <b>Client:</b> COTA Travel Insurance | <b>Agency:</b> Showpony
+            Creative Director became an equally ridiculous TVC. <b>Client:</b>{" "}
+            COTA Travel Insurance | <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

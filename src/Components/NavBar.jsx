@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import instagramLogo from "../Assets/SW_instagramLogo.png";
 
 function NavBar() {
   return (
@@ -10,11 +9,6 @@ function NavBar() {
       <Link className="navLinkButton" to="/letsjam">
         let's jam
       </Link>
-      <div className="socialLogos">
-        <a href="https://www.instagram.com/thesongworks/" target="_blank">
-          <img src={instagramLogo} alt="Instagram Link" />
-        </a>
-      </div>
     </div>
   );
 }

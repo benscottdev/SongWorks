@@ -17,8 +17,8 @@ function TheGreenBin() {
           />
           <p>
             <b>The Green Bin.</b> How do you help people remember the long list
-            of things that can go in the green bin? <br />
-            <b>Client:</b> Green Industries | <b>Agency</b>: Showpony
+            of things that can go in the green bin? <b>Client:</b> Green
+            Industries | <b>Agency</b>: Showpony
           </p>
         </div>
       </div>

@@ -13,10 +13,6 @@ body {
   background-color: #eaeaea;
 }
 
-:root {
-  --grid-gap: 10px; /* Set your desired gap value */
-}
-
 .animatedPage {
   position: absolute;
   width: 100%;
@@ -70,20 +66,6 @@ body {
   filter: brightness(0);
 }
 
-.homeHeader {
-  z-index: 1;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 30vh;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
 .header {
   z-index: 1;
   position: fixed;
@@ -104,19 +86,14 @@ body {
 
 .homePage {
   margin-top: 30vh;
-  width: 100%;
-  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   padding: 10px;
-  grid-gap: var(--grid-gap);
+  grid-gap: 25px;
 }
 
 .jobsToDisplay {
-  width: 320px;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,14 +168,14 @@ body {
 }
 
 .about p {
-  text-align: center;
+  text-align: left;
   font-weight: lighter;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-top: 5%;
 }
 
@@ -226,7 +203,7 @@ body {
 
 .jobAbout p {
   margin-top: 25px;
-  text-align: center;
+  text-align: left;
   width: 650px;
   color: #151515;
 }
@@ -254,6 +231,14 @@ body {
   font-weight: 100;
   letter-spacing: -1px;
   text-align: center;
+  font-size: 24px;
+}
+
+.letsJam img {
+  margin-top: 15px;
+  width: 30px;
+  border-radius: 5px;
+  filter: brightness(0);
 }
 
 #email {
@@ -262,39 +247,44 @@ body {
   font-weight: 100;
 }
 
-@media (min-width: 1100px) and (max-width: 1399px) {
-  .jobsToDisplay img {
-    width: 400px;
-  }
+@media (max-width: 1200px) {
   .homePage {
-    padding: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
 }
 
-/* 
-@media (max-width: 550px) {
+@media (max-width: 780px) {
   .homePage {
-    width: auto;
-    grid-template-columns: 1fr;
-  }
-  .jobsToDisplay img {
-    width: 300px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .jobsToDisplay h1 {
-    width: 300px;
-    height: 169px;
+  #swLogo {
+    width: 250px;
+  }
+
+  .about p {
+    width: 500px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .homePage {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .navLinkButton {
+    font-size: 20px;
+    letter-spacing: -1px;
   }
 
   #swLogo {
     width: 200px;
   }
 
-  .navLinks {
-    font-size: 25px;
-  }
-
   .about p {
-    width: 400px;
+    width: 300px;
+    font-size: 14px;
   }
-} */
+}

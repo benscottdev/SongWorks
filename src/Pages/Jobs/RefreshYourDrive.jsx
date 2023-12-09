@@ -17,7 +17,6 @@ function RefreshYourDrive() {
           />
           <p>
             <b>Refresh Your Drive.</b> This super bubbly 70’s soft-drink style
-            jingle encourages drivers to take a refreshing break on long trips.
             <br />
             <b>Client:</b> Motor Accident Commission | <b>Agency:</b> Clemenger
           </p>

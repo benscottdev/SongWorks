@@ -19,8 +19,7 @@ function HappyWash() {
           <p>
             <b>Happy Wash.</b> Car owners aren’t huge fans of visiting
             car-washes, so we wrote a track encouraging them to do it for their
-            car. <br />
-            <b>Client:</b> OTR | <b>Agency:</b> Showpony
+            car. <b>Client:</b> OTR | <b>Agency:</b> Showpony
           </p>
         </div>
       </div>
