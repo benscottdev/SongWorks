@@ -9,6 +9,7 @@ function QuitYourWay() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={quitYourWayVideo}
             controls
             type="video/mp4"

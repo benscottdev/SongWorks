@@ -28,11 +28,14 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
+.landingPage video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
+
 .landingAnimation {
-  border: 1px solid #e35ea0;
   width: 900px;
-  height: 506px;
-  margin-bottom: 50px;
 }
 
 .exploreBtn {
@@ -82,6 +85,12 @@ body {
 #swLogo {
   width: 300px;
   margin: 20px;
+  filter: brightness(0);
+  transition: 0.3s ease;
+}
+
+#swLogo:hover {
+  filter: brightness(1);
 }
 
 .homePage {
@@ -90,7 +99,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   padding: 10px;
-  grid-gap: 25px;
+  grid-gap: 5px;
 }
 
 .jobsToDisplay {
@@ -115,7 +124,7 @@ body {
 }
 
 .jobsToDisplay img {
-  width: 450px;
+  width: 470px;
 }
 
 .navLinks {
@@ -124,7 +133,7 @@ body {
 }
 
 .navLinkButton {
-  color: #151515;
+  color: #000000;
   text-decoration: none;
   transition: 0.1s ease;
 }
@@ -247,10 +256,14 @@ body {
   font-weight: 100;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .homePage {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+  }
+
+  .jobsToDisplay img {
+    width: 500px;
   }
 }
 

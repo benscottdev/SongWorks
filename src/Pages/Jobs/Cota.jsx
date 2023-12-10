@@ -9,6 +9,7 @@ function Cota() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={cotaVideo}
             controls
             type="video/mp4"

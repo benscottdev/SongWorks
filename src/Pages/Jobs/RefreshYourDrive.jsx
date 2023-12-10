@@ -9,6 +9,7 @@ function RefreshYourDrive() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={refreshYourDriveVideo}
             controls
             type="video/mp4"

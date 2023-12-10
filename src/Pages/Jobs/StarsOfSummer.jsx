@@ -9,6 +9,7 @@ function StarsOfSummer() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={starsOfSummerVideo}
             controls
             type="video/mp4"

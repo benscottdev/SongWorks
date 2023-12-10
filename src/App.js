@@ -28,8 +28,8 @@ function App() {
   return (
     <AnimatePresence mode="wait">
       <Routes key={location.pathname} location={location}>
-        {/* <Route path="/" element={<LandingPage />} /> */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/letsjam" element={<LetsJam />} />
         <Route path="/about" element={<About />} />
         <Route path="/refreshyourdrive" element={<RefreshYourDrive />} />

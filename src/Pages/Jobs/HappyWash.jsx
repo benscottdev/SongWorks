@@ -10,6 +10,7 @@ function HappyWash() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={happyWashVideo}
             controls
             type="video/mp4"

@@ -10,6 +10,7 @@ function Foodland() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={foodlandVideo}
             controls
             type="video/mp4"

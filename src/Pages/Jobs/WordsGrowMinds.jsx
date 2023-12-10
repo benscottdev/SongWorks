@@ -9,6 +9,7 @@ function WordsGrowMinds() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={wordsGrowMindsVideo}
             controls
             type="video/mp4"

@@ -1,19 +1,18 @@
-import { Link } from "react-router-dom";
 import AnimatedPages from "../Components/AnimatedPages";
-import { motion } from "framer-motion";
+import landingVideo from "../Assets/SW_LandingVideo.mp4";
 
 function LandingPage() {
+  if (window.location.pathname === "/") {
+    setTimeout(function() {
+      window.location.replace("/home");
+    }, 5000);
+  } else {
+  }
+
   return (
     <AnimatedPages>
       <div className="landingPage">
-        <motion.video src={""} className="landingAnimation" autoPlay muted />
-        {/* Below is in it's own motion.div so I can 
-        make it appear after the animation has run */}
-        <motion.div className="explore">
-          <Link className="exploreBtn" to="/home">
-            explore
-          </Link>
-        </motion.div>
+        <video src={landingVideo} className="landingAnimation" autoPlay muted />
       </div>
     </AnimatedPages>
   );

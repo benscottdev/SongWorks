@@ -9,6 +9,7 @@ function Wikicamps() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={wikiCamps}
             controls
             type="video/mp4"

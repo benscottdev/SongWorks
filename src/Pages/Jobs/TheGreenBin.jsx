@@ -9,6 +9,7 @@ function TheGreenBin() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={theGreenBinVideo}
             controls
             type="video/mp4"

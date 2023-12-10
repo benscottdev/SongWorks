@@ -9,6 +9,7 @@ function Moes() {
       <div className="jobAboutContainer">
         <div className="jobAbout">
           <video
+            preload="metadata"
             src={moesVideo}
             controls
             type="video/mp4"
