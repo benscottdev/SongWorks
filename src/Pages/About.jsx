@@ -1,12 +1,11 @@
 import AnimatedPages from "../Components/AnimatedPages";
-import BackBtn from "../Components/BackBtn";
+
 import Header from "../Components/Header";
 
 function About() {
   return (
     <AnimatedPages>
       <div className="about">
-        <BackBtn />
         <Header />
 
         <p>

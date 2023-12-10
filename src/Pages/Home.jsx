@@ -155,8 +155,8 @@ function Home() {
               }}
             >
               <img
+                alt={item.title}
                 src={item.img}
-                alt=""
                 style={{ opacity: hoveredItem === index ? 0.2 : 1 }}
               />
               {hoveredItem === index && (

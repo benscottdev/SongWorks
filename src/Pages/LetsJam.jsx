@@ -18,7 +18,7 @@ function LetsJam() {
         <p>0439 617 955</p>
 
         <a href="https://www.instagram.com/thesongworks/" target="_blank">
-          <img src={instagramLogo} alt="Instagram Link" />
+          <img src={instagramLogo} alt="Instagram Link" rel="noreferrer" />
         </a>
       </div>
     </AnimatedPages>

@@ -239,7 +239,7 @@ body {
   width: 700px;
   font-weight: 100;
   letter-spacing: -1px;
-  text-align: center;
+  text-align: left;
   font-size: 24px;
 }
 
@@ -282,7 +282,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 501px) {
   .homePage {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -293,7 +293,10 @@ body {
   }
 
   #swLogo {
-    width: 200px;
+    width: 150px;
+  }
+  .jobsToDisplay img {
+    width: 300px;
   }
 
   .about p {

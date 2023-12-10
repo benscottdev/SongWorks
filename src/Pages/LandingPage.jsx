@@ -1,13 +1,18 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import AnimatedPages from "../Components/AnimatedPages";
 import landingVideo from "../Assets/SW_LandingVideo.mp4";
 
 function LandingPage() {
-  if (window.location.pathname === "/") {
-    setTimeout(function() {
-      window.location.replace("/home");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectTimer = setTimeout(() => {
+      navigate("/home");
     }, 5000);
-  } else {
-  }
+
+    return () => clearTimeout(redirectTimer);
+  }, [navigate]);
 
   return (
     <AnimatedPages>
@@ -17,4 +22,5 @@ function LandingPage() {
     </AnimatedPages>
   );
 }
+
 export default LandingPage;
