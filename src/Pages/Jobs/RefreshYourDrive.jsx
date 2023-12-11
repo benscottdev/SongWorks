@@ -17,9 +17,11 @@ function RefreshYourDrive() {
             disablePictureInPicture
           />
           <p>
-            <b>Refresh Your Drive.</b> This super bubbly 70’s soft-drink style
+            <b>Refresh Your Drive.</b> This super bubbly 70’s soft-drink style.
             <br />
-            <b>Client:</b> Motor Accident Commission | <b>Agency:</b> Clemenger
+            <br />
+            <b> Client:</b> MAC <br />
+            <b>Agency:</b> Clemenger
           </p>
         </div>
       </div>

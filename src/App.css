@@ -57,8 +57,8 @@ body {
 }
 
 #swLogo {
-  width: 300px;
-  margin: 20px;
+  width: 270px;
+  margin-right: 20px;
   filter: brightness(0);
   transition: 0.3s ease;
 }
@@ -147,10 +147,7 @@ body {
   height: 100vh;
   color: #151515;
   font-size: 28px;
-}
-
-.about b {
-  color: #e35ea0;
+  font-weight: 100;
 }
 
 .about p {
@@ -228,7 +225,7 @@ body {
 
 #email {
   text-decoration: none;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: #151515;
   font-weight: 100;
@@ -257,7 +254,7 @@ body {
   }
 
   .homePage {
-    margin-top: 10vh;
+    margin-top: 15vh;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -273,6 +270,7 @@ body {
   .navLinks {
     font-size: 18px;
     margin-left: 10px;
+    letter-spacing: -1px;
   }
 
   .about {
@@ -302,6 +300,11 @@ body {
     max-width: 300px;
   }
 
+  .letsJam p {
+    font-size: 18px;
+    width: 300px;
+  }
+
   .letsJam img {
     width: 20px;
     border-radius: 5px;
@@ -312,53 +315,3 @@ body {
     font-size: 16px;
   }
 }
-
-/* 
-@media (max-width: 1100px) {
-  .homePage {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-
-  .jobsToDisplay img {
-    width: 500px;
-  }
-}
-
-@media (max-width: 780px) {
-  .homePage {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #swLogo {
-    width: 250px;
-  }
-
-  .about p {
-    width: 500px;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 501px) {
-  .homePage {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .navLinkButton {
-    font-size: 20px;
-    letter-spacing: -1px;
-  }
-
-  #swLogo {
-    width: 150px;
-  }
-  .jobsToDisplay img {
-    width: 300px;
-  }
-
-  .about p {
-    width: 300px;
-    font-size: 14px;
-  }
-} */

@@ -18,8 +18,10 @@ function FantasticNoodles() {
           />
           <p>
             <b>Fantastic Cup Noodles.</b> This wacky track gave Fantastic
-            Noodles ownership of the crowded cup noodle category. <b>Client:</b>{" "}
-            San Remo | <b>Agency:</b> Showpony
+            Noodles ownership of the crowded cup noodle category. <br />
+            <br />
+            <b>Client:</b> San Remo
+            <br /> <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

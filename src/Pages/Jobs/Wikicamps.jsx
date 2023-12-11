@@ -19,7 +19,9 @@ function Wikicamps() {
           <p>
             <b>Wikicamps.</b> Written for international camp info site
             Wikicamps, we brought some acoustic campfire comfort to this
-            feel-good sting. <b>Client:</b> Wikicamps | <b>Agency:</b> Showpony
+            feel-good sting. <br />
+            <br />
+            <b>Client:</b> Wikicamps <br /> <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

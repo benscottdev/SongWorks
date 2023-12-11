@@ -18,9 +18,11 @@ function QuitYourWay() {
           />
           <p>
             <b>Quit Your Way in May.</b> Drug and Alcohol Services needed a way
-            to encourage smokers to give up cigarettes during their ‘Quit Your
-            Way In May’ campaign. <br />
-            <b>Client:</b> SA Govt | <b>Agency:</b> Showpony
+            to encourage smokers <br />
+            to give up cigarettes during their ‘Quit Your Way In May’ campaign.{" "}
+            <br />
+            <br />
+            <b> Client:</b> SA Govt <br /> <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

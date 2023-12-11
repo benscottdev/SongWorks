@@ -8,8 +8,8 @@ function LetsJam() {
       <Header />
       <div className="letsJam">
         <p>
-          Hey, thanks for dropping by. Next steps, shoot us an email or give us
-          a call and let's make some music together.
+          Hey, thanks for dropping by. Next steps, shoot us an email <br />
+          or give us a call and let's make some music together.
         </p>
         <a id="email" href="mailto: benscott.dev@gmail.com">
           <p>andyscott@songworks.com.au</p>

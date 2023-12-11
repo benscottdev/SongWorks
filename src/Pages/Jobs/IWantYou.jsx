@@ -34,7 +34,8 @@ function IWantYou() {
             we pitched this track/concept to encourage a vulnerable cohort to
             get an important health test – if not for them, for the ones they
             love. The video was a tonal guide for pitch purposes only. <br />
-            <b>Client:</b> SA Government | <b>Agency:</b> Showpony
+            <br />
+            <b>Client:</b> SA Government <br /> <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

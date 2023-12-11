@@ -19,7 +19,8 @@ function StarsOfSummer() {
           <p>
             <b>Stars of Summer.</b> Promoting their iconic frog cake, this was
             one of 4 radio jingles we made for the Balfours Bakery ‘Stars of
-            Summer’ campaign. <b>Client:</b> Balfours Bakery <br />
+            Summer’ campaign. <br />
+            <br /> <b>Client:</b> Balfours Bakery <br />
             <b>Agency:</b> Showpony
           </p>
         </div>

@@ -20,7 +20,9 @@ function WordsGrowMinds() {
             <b>Words Grow Minds.</b> Beautifully animated, this track forms the
             basis of a wider campaign encouraging parents to engage more with
             their babies and help grow their minds. <br />
-            <b>Client:</b> The Early Years Taskforce | <b>Agency:</b> Showpony
+            <br />
+            <b>Client:</b> The Early Years Taskforce <br /> <b>Agency:</b>{" "}
+            Showpony
           </p>
         </div>
       </div>
