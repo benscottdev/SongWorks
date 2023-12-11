@@ -143,7 +143,7 @@ function Home() {
               animate={{ opacity: 1 }}
               transition={{
                 ease: "easeIn",
-                delay: 0.1 * index + 1,
+                delay: 0.1 * index + 0.2,
                 duration: 1,
               }}
               style={{
@@ -159,6 +159,7 @@ function Home() {
                 src={item.img}
                 style={{ opacity: hoveredItem === index ? 0.2 : 1 }}
               />
+
               {hoveredItem === index && (
                 <motion.h1
                   initial={{ opacity: 0 }}

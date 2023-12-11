@@ -14,12 +14,16 @@ function LetsJam() {
         <a id="email" href="mailto: benscott.dev@gmail.com">
           <p>andyscott@songworks.com.au</p>
         </a>
-        <br />
-        <p>0439 617 955</p>
-
-        <a href="https://www.instagram.com/thesongworks/" target="_blank">
-          <img src={instagramLogo} alt="Instagram Link" rel="noreferrer" />
-        </a>
+        <div>
+          <p>0439 617 955 </p>
+          <a
+            href="https://www.instagram.com/thesongworks/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={instagramLogo} id="instagramLink" alt="instagram-link" />
+          </a>
+        </div>
       </div>
     </AnimatedPages>
   );
