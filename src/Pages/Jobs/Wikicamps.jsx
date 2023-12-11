@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
-import wikiCamps from "../../Assets/JobPageAssets/Videos/WikiCamps_VIDEO.mp4";
+import wikiCamps from "../../Assets/JobPageAssets/Videos/WikiCamps.mp4";
 
 function Wikicamps() {
   return (

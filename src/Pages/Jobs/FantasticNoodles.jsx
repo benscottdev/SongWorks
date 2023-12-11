@@ -1,5 +1,5 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import fantasticNoodlesVideo from "../../Assets/JobPageAssets/Videos/YupToTheCup_VIDEO.mp4";
+import fantasticNoodlesVideo from "../../Assets/JobPageAssets/Videos/YupToTheCup.mp4";
 import Header from "../../Components/Header";
 
 function FantasticNoodles() {

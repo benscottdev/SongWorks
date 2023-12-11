@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 
-import happyWashVideo from "../../Assets/JobPageAssets/Videos/HappyWash_VIDEO.mp4";
+import happyWashVideo from "../../Assets/JobPageAssets/Videos/HappyWash.mp4";
 import Header from "../../Components/Header";
 
 function HappyWash() {

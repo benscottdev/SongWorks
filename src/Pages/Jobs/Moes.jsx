@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
-import moesVideo from "../../Assets/JobPageAssets/Videos/GoAMoes_VIDEO.mp4";
+import moesVideo from "../../Assets/JobPageAssets/Videos/GoAMoes.mp4";
 
 function Moes() {
   return (

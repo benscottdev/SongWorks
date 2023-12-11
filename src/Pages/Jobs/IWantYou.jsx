@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import AnimatedPages from "../../Components/AnimatedPages";
 
 import iwantyou from "../../Assets/JobTiles/IWantYou.jpg";
-import iWantYouAudio from "../../Assets/JobPageAssets//Audio/iWantYouAudio.mp3";
+import iWantYouAudio from "../../Assets/JobPageAssets/Audio/iWantYouAudio.mp3";
 import Header from "../../Components/Header";
 
 function IWantYou() {
@@ -31,11 +31,11 @@ function IWantYou() {
           />
           <p>
             <b>Health Services Pitch.</b> While the campaign never went ahead,
-            we pitched this track/concept to encourage a vulnerable cohort to
-            get an important health test – if not for them, for the ones they
-            love. The video was a tonal guide for pitch purposes only. <br />
+            we pitched this track/concept to encourage a vunerable cohort to get
+            an important health test - if not for them, for the ones they love.
+            (Video was a tonal guide for pitch purposes only.) <br />
             <br />
-            <b>Client:</b> SA Government <br /> <b>Agency:</b> Showpony
+            <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

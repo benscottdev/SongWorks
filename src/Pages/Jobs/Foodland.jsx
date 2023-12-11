@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 
-import foodlandVideo from "../../Assets/JobPageAssets/Videos/Foodland_VIDEO.mp4";
+import foodlandVideo from "../../Assets/JobPageAssets/Videos/Foodland.mp4";
 import Header from "../../Components/Header";
 
 function Foodland() {
@@ -21,7 +21,7 @@ function Foodland() {
             <b>Foodland.</b> A pitch-winning track that tells the story of
             Foodland’s commitment to provide the people of South Australia with
             great, homegrown produce. <br />
-            <br /> <b>Client:</b> Foodland <br /> <b>Agency:</b> KWP
+            <br /> <b>Client:</b> Foodland <br /> <b>Agency:</b> KWPX
           </p>
         </div>
       </div>

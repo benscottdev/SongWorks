@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
-import quitYourWayVideo from "../../Assets/JobPageAssets/Videos/QuitYourWay_VIDEO.mp4";
+import quitYourWayVideo from "../../Assets/JobPageAssets/Videos/QuitYourWay.mp4";
 
 function QuitYourWay() {
   return (

@@ -1,5 +1,5 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-import cotaVideo from "../../Assets/JobPageAssets/Videos/Cota_VIDEO.mp4";
+import cotaVideo from "../../Assets/JobPageAssets/Videos/Cota.mp4";
 import Header from "../../Components/Header";
 
 function Cota() {

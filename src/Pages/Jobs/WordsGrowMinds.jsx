@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
-import wordsGrowMindsVideo from "../../Assets/JobPageAssets/Videos/WordsGrowMinds_VIDEO.mp4";
+import wordsGrowMindsVideo from "../../Assets/JobPageAssets/Videos/WordsGrowMinds.mp4";
 
 function WordsGrowMinds() {
   return (
@@ -21,8 +21,7 @@ function WordsGrowMinds() {
             basis of a wider campaign encouraging parents to engage more with
             their babies and help grow their minds. <br />
             <br />
-            <b>Client:</b> The Early Years Taskforce <br /> <b>Agency:</b>{" "}
-            Showpony
+            <b>Client:</b> Early Years Taskforce <br /> <b>Agency:</b> Showpony
           </p>
         </div>
       </div>

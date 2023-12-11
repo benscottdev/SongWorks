@@ -1,6 +1,6 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
-import starsOfSummerVideo from "../../Assets/JobPageAssets/Videos/StarsOfSummer_VIDEO.mp4";
+import starsOfSummerVideo from "../../Assets/JobPageAssets/Videos/StarsOfSummer.mp4";
 
 function StarsOfSummer() {
   return (
