@@ -7,7 +7,7 @@ function Header() {
     <div className="header">
       <NavBar />
       <Link to="/home">
-        <img rel="prefetch" src={swlogoblk} id="swLogo" />
+        <img rel="prefetch" src={swlogoblk} id="swLogo" alt="logo" />
       </Link>
     </div>
   );

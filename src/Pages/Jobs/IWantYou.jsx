@@ -26,7 +26,7 @@ function IWantYou() {
           <img
             style={{ cursor: "pointer" }}
             src={iwantyou}
-            alt="Place Image Here"
+            alt="iwantyouimage"
             onClick={handleImageClick}
           />
           <p>
