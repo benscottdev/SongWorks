@@ -24,7 +24,7 @@ function IWantYou() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/wikicamps">
+        <Link to="/cookiebutter">
           <NextPage />
         </Link>
         <Link to="/happywash">
