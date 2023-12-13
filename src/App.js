@@ -43,7 +43,7 @@ function App() {
         <Route path="/happywash" element={<HappyWash />} />
         <Route path="/thegreenbin" element={<TheGreenBin />} />
         <Route path="/wordsgrowminds" element={<WordsGrowMinds />} />
-        <Route path="/healthCheck" element={<IWantYou />} />
+        <Route path="/healthcheck" element={<IWantYou />} />
         <Route path="/wikicamps" element={<Wikicamps />} />
         <Route path="/cookiebutter" element={<CookieButter />} />
       </Routes>

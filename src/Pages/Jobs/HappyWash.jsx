@@ -10,7 +10,7 @@ function HappyWash() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/healthCheck">
+        <Link to="/healthcheck">
           <NextPage />
         </Link>
         <Link to="/fantasticnoodles">
