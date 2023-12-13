@@ -1,12 +1,18 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import moesVideo from "../../Assets/JobPageAssets/Videos/GoAMoes.mp4";
+import NextPage from "../../Components/NextPage";
+import { Link } from "react-router-dom";
 
 function Moes() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/wordsgrowminds">
+          <NextPage />
+        </Link>
+
         <div className="jobAbout">
           <video
             preload="metadata"

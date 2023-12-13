@@ -18,6 +18,7 @@ import TheGreenBin from "./Pages/Jobs/TheGreenBin";
 import WordsGrowMinds from "./Pages/Jobs/WordsGrowMinds";
 import IWantYou from "./Pages/Jobs/IWantYou";
 import Wikicamps from "./Pages/Jobs/Wikicamps";
+import CookieButter from "./Pages/Jobs/CookieButter";
 
 function App() {
   const location = useLocation();
@@ -42,8 +43,9 @@ function App() {
         <Route path="/happywash" element={<HappyWash />} />
         <Route path="/thegreenbin" element={<TheGreenBin />} />
         <Route path="/wordsgrowminds" element={<WordsGrowMinds />} />
-        <Route path="/iwantyou" element={<IWantYou />} />
+        <Route path="/healthCheck" element={<IWantYou />} />
         <Route path="/wikicamps" element={<Wikicamps />} />
+        <Route path="/cookiebutter" element={<CookieButter />} />
       </Routes>
     </AnimatePresence>
   );

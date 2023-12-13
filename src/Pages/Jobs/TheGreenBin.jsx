@@ -1,12 +1,21 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import theGreenBinVideo from "../../Assets/JobPageAssets/Videos/TheGreenBin.mp4";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function TheGreenBin() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/cota">
+          <NextPage />
+        </Link>
+        <Link to="/refreshyourdrive">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

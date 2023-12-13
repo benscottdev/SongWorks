@@ -1,12 +1,21 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import starsOfSummerVideo from "../../Assets/JobPageAssets/Videos/StarsOfSummer.mp4";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function StarsOfSummer() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/fantasticnoodles">
+          <NextPage />
+        </Link>
+        <Link to="/foodland">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

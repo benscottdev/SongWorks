@@ -231,6 +231,42 @@ body {
   font-weight: 100;
 }
 
+.nextPage {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+  filter: brightness(0);
+}
+
+.nextPage img {
+  width: 20px;
+  height: 20px;
+}
+
+.nextPage:hover {
+  filter: brightness(1);
+}
+
+.prevPage {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+  filter: brightness(0);
+}
+
+.prevPage img {
+  width: 20px;
+  height: 20px;
+}
+
+.prevPage:hover {
+  filter: brightness(1);
+}
+
 @media only screen and (max-width: 600px) {
   .landingPage {
     height: auto;

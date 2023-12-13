@@ -1,12 +1,17 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import wikiCamps from "../../Assets/JobPageAssets/Videos/WikiCamps.mp4";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function Wikicamps() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/cookiebutter">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

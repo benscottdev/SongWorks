@@ -1,12 +1,22 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import cotaVideo from "../../Assets/JobPageAssets/Videos/Cota.mp4";
 import Header from "../../Components/Header";
+import { Link } from "react-router-dom";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
 
 function Cota() {
   return (
     <AnimatedPages>
       <Header />
+
       <div className="jobAboutContainer">
+        <Link to="/foodland">
+          <NextPage />
+        </Link>
+        <Link to="/thegreenbin">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

@@ -1,12 +1,21 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import fantasticNoodlesVideo from "../../Assets/JobPageAssets/Videos/YupToTheCup.mp4";
 import Header from "../../Components/Header";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function FantasticNoodles() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/happywash">
+          <NextPage />
+        </Link>
+        <Link to="/starsofsummer">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import AnimatedPages from "../../Components/AnimatedPages";
-
 import iwantyou from "../../Assets/JobTiles/IWantYou.jpg";
 import iWantYouAudio from "../../Assets/JobPageAssets/Audio/iWantYouAudio.mp3";
 import Header from "../../Components/Header";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function IWantYou() {
   const audioRef = useRef(null);
@@ -22,6 +24,12 @@ function IWantYou() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/wikicamps">
+          <NextPage />
+        </Link>
+        <Link to="/happywash">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <img
             style={{ cursor: "pointer" }}
@@ -30,10 +38,8 @@ function IWantYou() {
             onClick={handleImageClick}
           />
           <p>
-            <b>Health Services Pitch.</b> While the campaign never went ahead,
-            we pitched this track/concept to encourage a vunerable cohort to get
-            an important health test - if not for them, for the ones they love.
-            (Video was a tonal guide for pitch purposes only.) <br />
+            <b>Health Check</b> This was a track we created for an important
+            health screening service. <br />
             <br />
             <b>Agency:</b> Showpony
           </p>

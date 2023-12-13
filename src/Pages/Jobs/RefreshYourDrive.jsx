@@ -1,12 +1,21 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import refreshYourDriveVideo from "../../Assets/JobPageAssets/Videos/RefreshYourDrive.mp4";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function RefreshYourDrive() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/thegreenbin">
+          <NextPage />
+        </Link>
+        <Link to="/quityourway">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

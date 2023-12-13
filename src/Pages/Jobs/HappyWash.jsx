@@ -1,13 +1,21 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-
 import happyWashVideo from "../../Assets/JobPageAssets/Videos/HappyWash.mp4";
 import Header from "../../Components/Header";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function HappyWash() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/healthServices">
+          <NextPage />
+        </Link>
+        <Link to="/fantasticnoodles">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

@@ -1,13 +1,21 @@
 import AnimatedPages from "../../Components/AnimatedPages";
-
 import foodlandVideo from "../../Assets/JobPageAssets/Videos/Foodland.mp4";
 import Header from "../../Components/Header";
+import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
+import { Link } from "react-router-dom";
 
 function Foodland() {
   return (
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/starsofsummer">
+          <NextPage />
+        </Link>
+        <Link to="/cota">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

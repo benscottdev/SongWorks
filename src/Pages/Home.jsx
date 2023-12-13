@@ -14,8 +14,9 @@ import refreshYourDrive from "../Assets/JobTiles/RefreshYourDrive.jpg";
 import starsOfSummer from "../Assets/JobTiles/StarsOfSummer.jpg";
 import theGreenBin from "../Assets/JobTiles/TheGreenBin.jpg";
 import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.jpg";
-import iwantyou from "../Assets/JobTiles/IWantYou.jpg";
+import healthCheck from "../Assets/JobTiles/IWantYou.jpg";
 import wikiCamps from "../Assets/JobTiles/Wikicamps.jpg";
+import cookieButter from "../Assets/JobTiles/CookieButter.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -100,11 +101,18 @@ function Home() {
       link: "/happywash",
     },
     {
-      title: "Health Services Pitch",
+      title: "Health Check",
       client: "SA Govt",
       agency: "Showpony",
-      img: iwantyou,
-      link: "/iwantyou",
+      img: healthCheck,
+      link: "/healthCheck",
+    },
+    {
+      title: "Cookie Butter",
+      client: "San Churro",
+      agency: "Showpony",
+      img: cookieButter,
+      link: "/cookiebutter",
     },
     {
       title: "Wikicamps",
