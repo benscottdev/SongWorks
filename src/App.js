@@ -19,6 +19,7 @@ import WordsGrowMinds from "./Pages/Jobs/WordsGrowMinds";
 import IWantYou from "./Pages/Jobs/IWantYou";
 import Wikicamps from "./Pages/Jobs/Wikicamps";
 import CookieButter from "./Pages/Jobs/CookieButter";
+import BigCheese from "./Pages/Jobs/BigCheese";
 
 function App() {
   const location = useLocation();
@@ -46,6 +47,7 @@ function App() {
         <Route path="/healthcheck" element={<IWantYou />} />
         <Route path="/wikicamps" element={<Wikicamps />} />
         <Route path="/cookiebutter" element={<CookieButter />} />
+        <Route path="/bigcheese" element={<BigCheese />} />
       </Routes>
     </AnimatePresence>
   );

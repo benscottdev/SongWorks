@@ -17,6 +17,7 @@ import wordsGrowMinds from "../Assets/JobTiles/WordsGrowMinds.jpg";
 import healthCheck from "../Assets/JobTiles/IWantYou.jpg";
 import wikiCamps from "../Assets/JobTiles/Wikicamps.jpg";
 import cookieButter from "../Assets/JobTiles/CookieButter.jpg";
+import bigCheese from "../Assets/JobTiles/BigCheese.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -106,6 +107,13 @@ function Home() {
       agency: "Showpony",
       img: healthCheck,
       link: "/healthCheck",
+    },
+    {
+      title: "Big Cheese",
+      client: "San Remo",
+      agency: "Showpony",
+      img: bigCheese,
+      link: "/bigcheese",
     },
     {
       title: "Cookie Butter",

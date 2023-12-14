@@ -14,7 +14,7 @@ function CookieButter() {
         <Link to="/wikicamps">
           <NextPage />
         </Link>
-        <Link to="/healthcheck">
+        <Link to="/bigcheese">
           <PrevPage />
         </Link>
         <div className="jobAbout">
