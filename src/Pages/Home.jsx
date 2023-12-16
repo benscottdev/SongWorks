@@ -131,7 +131,7 @@ function Home() {
       link: "/wikicamps",
     },
     {
-      title: "Sunflower",
+      title: "Sunflowers",
       client: "Property People",
       agency: "Showpony",
       img: sunflower,

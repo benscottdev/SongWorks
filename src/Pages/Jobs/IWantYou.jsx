@@ -1,25 +1,12 @@
-import React, { useRef } from "react";
+import React from "react";
 import AnimatedPages from "../../Components/AnimatedPages";
-import iwantyou from "../../Assets/JobTiles/IWantYou.jpg";
-import iWantYouAudio from "../../Assets/JobPageAssets/Audio/iWantYouAudio.mp3";
+import happyWashVideo from "../../Assets/JobPageAssets/Videos/HealthPitch.mp4";
 import Header from "../../Components/Header";
 import NextPage from "../../Components/NextPage";
 import PrevPage from "../../Components/PrevPage";
 import { Link } from "react-router-dom";
 
 function IWantYou() {
-  const audioRef = useRef(null);
-
-  const handleImageClick = () => {
-    if (audioRef.current) {
-      if (audioRef.current.paused) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
-    }
-  };
-
   return (
     <AnimatedPages>
       <Header />
@@ -31,21 +18,23 @@ function IWantYou() {
           <PrevPage />
         </Link>
         <div className="jobAbout">
-          <img
-            style={{ cursor: "pointer" }}
-            src={iwantyou}
-            alt="iwantyouimage"
-            onClick={handleImageClick}
+          <video
+            preload="metadata"
+            src={happyWashVideo}
+            controls
+            type="video/mp4"
+            controlsList="nodownload noremoteplayback"
+            disablePictureInPicture
           />
           <p>
             <b>Health Check</b> This was a track we created for an important
-            health screening service. <br />
+            health screening service. (Video for pitch purposes only).
+            <br />
             <br />
             <b>Agency:</b> Showpony
           </p>
         </div>
       </div>
-      <audio ref={audioRef} src={iWantYouAudio} />
     </AnimatedPages>
   );
 }
