@@ -18,6 +18,7 @@ import healthCheck from "../Assets/JobTiles/IWantYou.jpg";
 import wikiCamps from "../Assets/JobTiles/Wikicamps.jpg";
 import cookieButter from "../Assets/JobTiles/CookieButter.jpg";
 import bigCheese from "../Assets/JobTiles/BigCheese.jpg";
+import sunflower from "../Assets/JobTiles/Sunflower.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -128,6 +129,13 @@ function Home() {
       agency: "Showpony",
       img: wikiCamps,
       link: "/wikicamps",
+    },
+    {
+      title: "Sunflower",
+      client: "Property People",
+      agency: "Showpony",
+      img: sunflower,
+      link: "/sunflower",
     },
   ];
 

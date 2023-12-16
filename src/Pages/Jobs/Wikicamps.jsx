@@ -2,6 +2,7 @@ import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import wikiCamps from "../../Assets/JobPageAssets/Videos/WikiCamps.mp4";
 import PrevPage from "../../Components/PrevPage";
+import NextPage from "../../Components/NextPage";
 import { Link } from "react-router-dom";
 
 function Wikicamps() {
@@ -9,6 +10,9 @@ function Wikicamps() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/sunflower">
+          <NextPage />
+        </Link>
         <Link to="/cookiebutter">
           <PrevPage />
         </Link>

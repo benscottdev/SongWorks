@@ -20,6 +20,7 @@ import IWantYou from "./Pages/Jobs/IWantYou";
 import Wikicamps from "./Pages/Jobs/Wikicamps";
 import CookieButter from "./Pages/Jobs/CookieButter";
 import BigCheese from "./Pages/Jobs/BigCheese";
+import Sunflower from "./Pages/Jobs/Sunflower";
 
 function App() {
   const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
         <Route path="/wikicamps" element={<Wikicamps />} />
         <Route path="/cookiebutter" element={<CookieButter />} />
         <Route path="/bigcheese" element={<BigCheese />} />
+        <Route path="/sunflower" element={<Sunflower />} />
       </Routes>
     </AnimatePresence>
   );
