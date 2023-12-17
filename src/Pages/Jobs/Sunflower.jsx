@@ -2,6 +2,7 @@ import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import sunflowerVideo from "../../Assets/JobPageAssets/Videos/Sunflowers.mp4";
 import PrevPage from "../../Components/PrevPage";
+import NextPage from "../../Components/NextPage";
 import { Link } from "react-router-dom";
 
 function Sunflower() {
@@ -9,8 +10,11 @@ function Sunflower() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/wikicamps">
+        <Link to="/refreshyourdrive">
           <PrevPage />
+        </Link>
+        <Link to="/cota">
+          <NextPage />
         </Link>
         <div className="jobAbout">
           <video

@@ -13,7 +13,7 @@ function RefreshYourDrive() {
         <Link to="/thegreenbin">
           <NextPage />
         </Link>
-        <Link to="/quityourway">
+        <Link to="/sunflowers">
           <PrevPage />
         </Link>
         <div className="jobAbout">
@@ -26,8 +26,9 @@ function RefreshYourDrive() {
             disablePictureInPicture
           />
           <p>
-            <b>Refresh Your Drive.</b> This super bubbly 70’s soft-drink style
-            jingle encourages drivers to take a refreshing break on long trips.
+            <b>Refresh Your Drive.</b> For this 60 second radio spot we
+            channelled the super fizzy soft drink ads of the 70’s, encouraging
+            drivers to take a refreshing break on long road trips.
             <br />
             <br />
             <b> Client:</b> Motor Accident Commission <br />

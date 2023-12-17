@@ -31,13 +31,14 @@ function Home() {
       link: "/moes",
     },
     {
-      title: "Words Grow Minds",
-      client: "The Raising Literacy Taskforce",
-      agency: "Showpony",
+      title: "Foodland",
+      client: "Foodland",
+      agency: "KWP",
       credits: "Scott/Illingworth",
-      img: wordsGrowMinds,
-      link: "/wordsgrowminds",
+      img: foodland,
+      link: "/foodland",
     },
+
     {
       title: "Quit Your Way in May",
       client: "SA Govt",
@@ -55,13 +56,13 @@ function Home() {
       link: "/refreshyourdrive",
     },
     {
-      title: "The Green Bin",
-      client: "Green Industries",
+      title: "Sunflowers",
+      client: "Property People",
       agency: "Showpony",
-      credits: "Scott/Illingworth",
-      img: theGreenBin,
-      link: "/thegreenbin",
+      img: sunflower,
+      link: "/sunflower",
     },
+
     {
       title: "COTA Travel Insurance",
       client: "COTA Travel Insurance",
@@ -71,12 +72,12 @@ function Home() {
       link: "/cota",
     },
     {
-      title: "Foodland",
-      client: "Foodland",
-      agency: "KWP",
+      title: "Words Grow Minds",
+      client: "The Raising Literacy Taskforce",
+      agency: "Showpony",
       credits: "Scott/Illingworth",
-      img: foodland,
-      link: "/foodland",
+      img: wordsGrowMinds,
+      link: "/wordsgrowminds",
     },
     {
       title: "Stars of Summer",
@@ -95,7 +96,7 @@ function Home() {
       link: "/fantasticnoodles",
     },
     {
-      title: "Happy Wash, Happy Car",
+      title: "Happy Wash",
       client: "OTR",
       agency: "Showpony",
       credits: "Scott/Illingworth",
@@ -131,11 +132,12 @@ function Home() {
       link: "/wikicamps",
     },
     {
-      title: "Sunflowers",
-      client: "Property People",
+      title: "The Green Bin",
+      client: "Green Industries",
       agency: "Showpony",
-      img: sunflower,
-      link: "/sunflower",
+      credits: "Scott/Illingworth",
+      img: theGreenBin,
+      link: "/thegreenbin",
     },
   ];
 

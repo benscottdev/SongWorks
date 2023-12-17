@@ -10,10 +10,10 @@ function Foodland() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/starsofsummer">
+        <Link to="/quityourway">
           <NextPage />
         </Link>
-        <Link to="/cota">
+        <Link to="/moes">
           <PrevPage />
         </Link>
         <div className="jobAbout">

@@ -27,7 +27,7 @@ function IWantYou() {
             disablePictureInPicture
           />
           <p>
-            <b>Health Check</b> This was a track we created for an important
+            <b>Health Check</b> We created this emotive track for an important
             health screening service. (Video for pitch purposes only).
             <br />
             <br />

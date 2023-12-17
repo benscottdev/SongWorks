@@ -9,12 +9,16 @@ function About() {
         <Header />
 
         <p>
-          Be it an offbeat love song, an exhilarating soundtrack, or a wildly
-          catchy jingle you’ll need surgically removed from your temporal lobe,
-          we love making music. We’re in awe of its power to change hearts and
-          minds – to move, teach and inspire people like nothing else can. For
-          20 years, Songworks has been creating outstanding commercial music
-          audiences feel and remember.
+          We love making music. We’re in awe of its power to change hearts and
+          minds, to move, entertain and inspire audiences like nothing else can.
+          For 20 years, we've been creating award-winning commercial music
+          people feel and remember – wildly catchy jingles, exhilarating
+          soundtracks, offbeat love songs, on-hold music people call just to
+          hear… "no seriously, put me back on hold." <br />
+          <br />
+          While we have a small core team of writers, musicians and producers,
+          we’ll bring in whoever or whatever we need to <br />
+          make the song work.
         </p>
       </div>
     </AnimatedPages>

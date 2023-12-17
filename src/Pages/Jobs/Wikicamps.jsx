@@ -10,7 +10,7 @@ function Wikicamps() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/sunflower">
+        <Link to="/thegreenbin">
           <NextPage />
         </Link>
         <Link to="/cookiebutter">

@@ -8,15 +8,19 @@ function LetsJam() {
       <Header />
       <div className="letsJam">
         <p>
-          Thanks for dropping by. We’re based in Adelaide, South Australia. If
-          you’re nearby, let’s grab a coffee. If you’re further afield, shoot us
-          an email or give us a call and let’s get something started.
+          Thanks for dropping by. We’re based in Adelaide, <br /> South
+          Australia. If you’re nearby, let’s grab a coffee. <br /> If you’re
+          from further afield, shoot us an email or <br />
+          give us a call and let’s get something started.
         </p>
+        <br />
         <a id="email" href="mailto: benscott.dev@gmail.com">
           <p>andyscott@songworks.com.au</p>
         </a>
         <div>
-          <p>0439 617 955 </p>
+          <a href="tel:+610498095622">
+            <p>0439 617 955 </p>
+          </a>
           <a
             href="https://www.instagram.com/thesongworks/"
             target="_blank"

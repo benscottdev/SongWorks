@@ -13,7 +13,7 @@ function StarsOfSummer() {
         <Link to="/fantasticnoodles">
           <NextPage />
         </Link>
-        <Link to="/foodland">
+        <Link to="/wordsgrowminds">
           <PrevPage />
         </Link>
         <div className="jobAbout">

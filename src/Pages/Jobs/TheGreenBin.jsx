@@ -10,10 +10,7 @@ function TheGreenBin() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/cota">
-          <NextPage />
-        </Link>
-        <Link to="/refreshyourdrive">
+        <Link to="/wikicamps">
           <PrevPage />
         </Link>
         <div className="jobAbout">

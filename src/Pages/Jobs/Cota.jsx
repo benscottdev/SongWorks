@@ -11,10 +11,10 @@ function Cota() {
       <Header />
 
       <div className="jobAboutContainer">
-        <Link to="/foodland">
+        <Link to="/wordsgrowminds">
           <NextPage />
         </Link>
-        <Link to="/thegreenbin">
+        <Link to="/sunflower">
           <PrevPage />
         </Link>
         <div className="jobAbout">

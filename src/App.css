@@ -156,7 +156,7 @@ body {
   text-align: left;
   font-weight: lighter;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 800px;
@@ -223,14 +223,22 @@ body {
   width: 35px;
   border-radius: 5px;
   filter: brightness(0);
+  transition: 0.3s ease;
 }
 
-#email {
+.letsJam img:hover {
+  filter: brightness(1);
+}
+
+.letsJam a {
   text-decoration: none;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #151515;
-  font-weight: 100;
+  color: black;
+  transition: 200ms ease;
+  margin-bottom: 5px;
+}
+
+.letsJam a:hover {
+  color: #e35ea0;
 }
 
 .nextPage {

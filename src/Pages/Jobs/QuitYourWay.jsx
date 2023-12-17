@@ -13,7 +13,7 @@ function QuitYourWay() {
         <Link to="/refreshyourdrive">
           <NextPage />
         </Link>
-        <Link to="/wordsgrowminds">
+        <Link to="/foodland">
           <PrevPage />
         </Link>
         <div className="jobAbout">

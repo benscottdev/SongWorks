@@ -9,7 +9,7 @@ function Moes() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/wordsgrowminds">
+        <Link to="/foodland">
           <NextPage />
         </Link>
 

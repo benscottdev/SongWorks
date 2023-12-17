@@ -10,10 +10,10 @@ function WordsGrowMinds() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/quityourway">
+        <Link to="/starsofsummer">
           <NextPage />
         </Link>
-        <Link to="/moes">
+        <Link to="/cota">
           <PrevPage />
         </Link>
         <div className="jobAbout">
