@@ -8,8 +8,9 @@ function LetsJam() {
       <Header />
       <div className="letsJam">
         <p>
-          Hey, thanks for dropping by. Next steps, shoot us an email <br />
-          or give us a call and let's make some music together.
+          Thanks for dropping by. We’re based in Adelaide, South Australia. If
+          you’re nearby, let’s grab a coffee. If you’re further afield, shoot us
+          an email or give us a call and let’s get something started.
         </p>
         <a id="email" href="mailto: benscott.dev@gmail.com">
           <p>andyscott@songworks.com.au</p>
