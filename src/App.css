@@ -250,7 +250,8 @@ body {
   filter: brightness(0);
 }
 
-.nextPage img {
+.nextPage img,
+.prevPage img {
   width: 20px;
   height: 20px;
 }
@@ -266,11 +267,6 @@ body {
   transform: translateY(-50%);
   transition: 0.3s ease;
   filter: brightness(0);
-}
-
-.prevPage img {
-  width: 20px;
-  height: 20px;
 }
 
 .prevPage:hover {
