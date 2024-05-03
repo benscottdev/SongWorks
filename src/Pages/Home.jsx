@@ -19,6 +19,7 @@ import wikiCamps from "../Assets/JobTiles/Wikicamps.jpg";
 import cookieButter from "../Assets/JobTiles/CookieButter.jpg";
 import bigCheese from "../Assets/JobTiles/BigCheese.jpg";
 import sunflower from "../Assets/JobTiles/Sunflower.jpg";
+import southAusPolice from "../Assets/JobTiles/SouthAusPolice.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -138,6 +139,13 @@ function Home() {
       credits: "Scott/Illingworth",
       img: theGreenBin,
       link: "/thegreenbin",
+    },
+    {
+      title: "Easter",
+      client: "South Australian Police",
+      agency: "Showpony",
+      img: southAusPolice,
+      link: "/southauspolice",
     },
   ];
 

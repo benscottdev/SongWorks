@@ -1,6 +1,7 @@
 import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import theGreenBinVideo from "../../Assets/JobPageAssets/Videos/TheGreenBin.mp4";
+import NextPage from "../../Components/NextPage";
 import PrevPage from "../../Components/PrevPage";
 import { Link } from "react-router-dom";
 
@@ -9,6 +10,9 @@ function TheGreenBin() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/southauspolice">
+          <NextPage />
+        </Link>
         <Link to="/wikicamps">
           <PrevPage />
         </Link>

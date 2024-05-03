@@ -21,6 +21,7 @@ import Wikicamps from "./Pages/Jobs/Wikicamps";
 import CookieButter from "./Pages/Jobs/CookieButter";
 import BigCheese from "./Pages/Jobs/BigCheese";
 import Sunflower from "./Pages/Jobs/Sunflower";
+import SouthAusPolice from "./Pages/Jobs/SouthAusPolice";
 
 function App() {
   const location = useLocation();
@@ -50,6 +51,7 @@ function App() {
         <Route path="/cookiebutter" element={<CookieButter />} />
         <Route path="/bigcheese" element={<BigCheese />} />
         <Route path="/sunflower" element={<Sunflower />} />
+        <Route path="/southauspolice" element={<SouthAusPolice />} />
       </Routes>
     </AnimatePresence>
   );
