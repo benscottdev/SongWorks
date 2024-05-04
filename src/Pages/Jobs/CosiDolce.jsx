@@ -23,8 +23,8 @@ function CosiDolce() {
           />
           <p>
             <b>Così Dolce, Così Perversa.</b> If we'd been alive to soundtrack
-            the closing credits for this 1969 Italian film Così Dolce, Così
-            Perversa (So Sweet, So Perverse) it would have sounded like this.
+            the credits for this 1969 Italian film Così Dolce, Così Perversa (So
+            Sweet, So Perverse) it would have sounded like this.
           </p>
         </div>
       </div>
