@@ -277,10 +277,6 @@ body {
     height: 85vh;
   }
 
-  br {
-    display: none;
-  }
-
   .backBtn img {
     height: 20px;
     width: 20px;
@@ -324,7 +320,7 @@ body {
   }
 
   .about p {
-    margin-bottom: 18px;
+    margin-top: 18px;
     width: 100%;
     max-width: 300px;
   }
@@ -341,6 +337,11 @@ body {
 
   .letsJam {
     height: 85vh;
+  }
+
+  .about br,
+  .letsJam br {
+    display: none;
   }
 
   .jobAbout p,
