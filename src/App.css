@@ -273,8 +273,8 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .landingAnimation {
-    margin-bottom: 25px;
+  .landingPage {
+    height: 85vh;
   }
 
   br {
