@@ -274,8 +274,8 @@ body {
 
 @media only screen and (max-width: 600px) {
   .landingPage {
-    height: -50%;
-    /* margin-top: 10vh; */
+    height: auto;
+    margin-top: 10vh;
   }
 
   br {
@@ -320,7 +320,7 @@ body {
 
   .about {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     font-size: 18px;
   }
 
@@ -338,6 +338,10 @@ body {
   .jobAboutContainer img {
     width: 100%;
     height: auto;
+  }
+
+  .letsJam {
+    height: 85vh;
   }
 
   .jobAbout p,
