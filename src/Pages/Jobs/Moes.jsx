@@ -2,6 +2,7 @@ import AnimatedPages from "../../Components/AnimatedPages";
 import Header from "../../Components/Header";
 import moesVideo from "../../Assets/JobPageAssets/Videos/GoAMoes.mp4";
 import NextPage from "../../Components/NextPage";
+import PrevPage from "../../Components/PrevPage";
 import { Link } from "react-router-dom";
 
 function Moes() {
@@ -12,7 +13,9 @@ function Moes() {
         <Link to="/foodland">
           <NextPage />
         </Link>
-
+        <Link to="/southauspolice">
+          <PrevPage />
+        </Link>
         <div className="jobAbout">
           <video
             preload="metadata"

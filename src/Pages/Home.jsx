@@ -26,6 +26,13 @@ import onHold from "../Assets/JobTiles/OnHold.jpg";
 function Home() {
   const jobsToDisplayArray = [
     {
+      title: "Easter",
+      client: "South Australian Police",
+      agency: "Showpony",
+      img: southAusPolice,
+      link: "/southauspolice",
+    },
+    {
       title: "Moe’s Hotdogs",
       client: "OTR",
       agency: "Showpony",
@@ -142,13 +149,7 @@ function Home() {
       img: theGreenBin,
       link: "/thegreenbin",
     },
-    {
-      title: "Easter",
-      client: "South Australian Police",
-      agency: "Showpony",
-      img: southAusPolice,
-      link: "/southauspolice",
-    },
+
     {
       title: " On Hold Message",
       client: "Showpony",

@@ -10,11 +10,8 @@ function SouthAusPolice() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/onhold">
+        <Link to="/moes">
           <NextPage />
-        </Link>
-        <Link to="/thegreenbin">
-          <PrevPage />
         </Link>
         <div className="jobAbout">
           <video

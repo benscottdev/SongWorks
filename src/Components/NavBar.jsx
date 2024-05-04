@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div className="navLinks">
       <Link className="navLinkButton" to="/home">
-        the work
+        the songs
       </Link>
       <Link className="navLinkButton" to="/about">
         the story

@@ -10,7 +10,7 @@ function TheGreenBin() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
-        <Link to="/southauspolice">
+        <Link to="/onhold">
           <NextPage />
         </Link>
         <Link to="/wikicamps">
@@ -28,7 +28,7 @@ function TheGreenBin() {
           <p>
             <b>The Green Bin.</b> How do you help people remember the long list
             of things that can go in the green bin? <br />
-            <br /> <b>Client:</b> Green Industries (SA Govt)
+            <br /> <b>Client:</b> Green Industries SA
             <br /> <b>Agency</b>: Showpony
           </p>
         </div>

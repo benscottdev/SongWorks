@@ -14,8 +14,9 @@ function About() {
           For 20 years, we've been creating award-winning commercial music
           people feel and remember – wildly catchy jingles, exhilarating
           soundtracks, offbeat love songs, on-hold music people call just to
-          hear… "no seriously, put me back on hold." <br />
-          <br />
+          hear… "no seriously, put me back on hold." <br /> <br />
+        </p>
+        <p>
           While we have a small core team of writers, musicians and producers,
           we’ll bring in whoever or whatever we need to <br />
           make the song work.

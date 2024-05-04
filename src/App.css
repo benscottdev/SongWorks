@@ -145,20 +145,19 @@ body {
 }
 
 .about {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   color: #151515;
   font-size: 28px;
   font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about p {
-  text-align: left;
   font-weight: lighter;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 800px;
   letter-spacing: -1px;
 }
@@ -275,8 +274,12 @@ body {
 
 @media only screen and (max-width: 600px) {
   .landingPage {
-    height: auto;
-    margin-top: 10vh;
+    height: -50%;
+    /* margin-top: 10vh; */
+  }
+
+  br {
+    display: none;
   }
 
   .backBtn img {
@@ -317,11 +320,12 @@ body {
 
   .about {
     width: 100%;
-    height: auto;
+    height: 100vh;
     font-size: 18px;
   }
 
   .about p {
+    margin-bottom: 18px;
     width: 100%;
     max-width: 300px;
   }
