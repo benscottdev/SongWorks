@@ -14,7 +14,7 @@ function LetsJam() {
           give us a call and let’s get something started.
         </p>
         <br />
-        <a id="email" href="mailto: benscott.dev@gmail.com">
+        <a id="email" href="mailto: andyscott@songworks.com.au">
           <p>andyscott@songworks.com.au</p>
         </a>
         <div>
