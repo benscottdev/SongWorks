@@ -1,0 +1,12 @@
+ADD A NEW JOB TO PAGE:
+
+1. Download Video File & Preview Image
+2. Get copy from Songworks
+3. Compress video with Media Encoder to be 1280 x 720 with H.264 encoding
+4. Add new route to App.js 
+5. Add new information to object array in Home.jsx
+6. Convert preview image to .jpg
+7. Import image in Home.jsx
+8. Import video in new page
+9. Make sure arrows lead to correct pages
+10. git add *, git commit -m "", git push, npm run build

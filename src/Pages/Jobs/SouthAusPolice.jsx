@@ -2,6 +2,7 @@ import AnimatedPages from "../../Components/AnimatedPages";
 import SouthAusPoliceVideo from "../../Assets/JobPageAssets/Videos/SouthAusPolice.mp4";
 import Header from "../../Components/Header";
 import PrevPage from "../../Components/PrevPage";
+import NextPage from "../../Components/NextPage";
 import { Link } from "react-router-dom";
 
 function SouthAusPolice() {
@@ -9,6 +10,9 @@ function SouthAusPolice() {
     <AnimatedPages>
       <Header />
       <div className="jobAboutContainer">
+        <Link to="/onhold">
+          <NextPage />
+        </Link>
         <Link to="/thegreenbin">
           <PrevPage />
         </Link>
@@ -22,7 +26,7 @@ function SouthAusPolice() {
             disablePictureInPicture
           />
           <p>
-            <b>South Australian Police</b> A fun road trip singalong helped the
+            <b>South Australian Police.</b> A fun road trip singalong helped the
             South Australian Police Force deliver a serious Easter road safety
             message.
             <br />

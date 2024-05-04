@@ -20,6 +20,8 @@ import cookieButter from "../Assets/JobTiles/CookieButter.jpg";
 import bigCheese from "../Assets/JobTiles/BigCheese.jpg";
 import sunflower from "../Assets/JobTiles/Sunflower.jpg";
 import southAusPolice from "../Assets/JobTiles/SouthAusPolice.jpg";
+import cosiDolce from "../Assets/JobTiles/CosiDolce.jpg";
+import onHold from "../Assets/JobTiles/OnHold.jpg";
 
 function Home() {
   const jobsToDisplayArray = [
@@ -146,6 +148,18 @@ function Home() {
       agency: "Showpony",
       img: southAusPolice,
       link: "/southauspolice",
+    },
+    {
+      title: " On Hold Message",
+      client: "Showpony",
+      agency: "Showpony",
+      img: onHold,
+      link: "/onhold",
+    },
+    {
+      title: "Così Dolce, Così Perversa",
+      img: cosiDolce,
+      link: "/cosidolce",
     },
   ];
 

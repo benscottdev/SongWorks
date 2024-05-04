@@ -22,6 +22,8 @@ import CookieButter from "./Pages/Jobs/CookieButter";
 import BigCheese from "./Pages/Jobs/BigCheese";
 import Sunflower from "./Pages/Jobs/Sunflower";
 import SouthAusPolice from "./Pages/Jobs/SouthAusPolice";
+import OnHold from "./Pages/Jobs/OnHold";
+import CosiDolce from "./Pages/Jobs/CosiDolce";
 
 function App() {
   const location = useLocation();
@@ -52,6 +54,8 @@ function App() {
         <Route path="/bigcheese" element={<BigCheese />} />
         <Route path="/sunflower" element={<Sunflower />} />
         <Route path="/southauspolice" element={<SouthAusPolice />} />
+        <Route path="/onhold" element={<OnHold />} />
+        <Route path="/cosidolce" element={<CosiDolce />} />
       </Routes>
     </AnimatePresence>
   );
